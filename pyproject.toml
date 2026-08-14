@@ -1,0 +1,20 @@
+[project]
+name = "biotech-job-engine"
+version = "1.0.0"
+description = "Company-career-page retrieval and scoring engine for biotech job discovery"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "PyYAML>=6.0", "beautifulsoup4>=4.12"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.45"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+biotech-jobs = "biotech_jobs.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

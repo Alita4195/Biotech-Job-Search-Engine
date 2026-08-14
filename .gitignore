@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Job-search state and generated reports
+output/
+previous-state/
+*.sqlite
+*.sqlite3
+ranked_jobs.csv
+new_matches.csv
+run_summary.json
+
+# Personal/private material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+resumes/
+private/
+calibration/completed/
+calibration/*_completed.xlsx
+calibration/*-completed.xlsx
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

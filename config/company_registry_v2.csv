@@ -1,0 +1,101 @@
+company,priority,focus,platform,career_endpoint,validation
+Element Biosciences,Tier 1,,greenhouse,https://job-boards.greenhouse.io/elementbiosciences,existing production adapter
+Natera,Tier 1,,greenhouse,https://job-boards.greenhouse.io/natera,existing production adapter
+GRAIL,Tier 1,,lever,https://jobs.lever.co/grailbio,existing production adapter
+Foundation Medicine,Tier 1,,foundation,https://careers.foundationmedicine.com/jobs/search,existing production adapter
+10x Genomics,Tier 1,,kula,https://careers.kula.ai/10xgenomics,existing production adapter
+Twist Bioscience,Tier 1,,greenhouse,https://job-boards.greenhouse.io/twistbioscience,existing production adapter
+Illumina,Tier 1,,workday,https://illumina.wd1.myworkdayjobs.com/illumina-careers,existing production adapter
+Guardant Health,Tier 1,,workday,https://gh.wd1.myworkdayjobs.com/gh,existing production adapter
+Exact Sciences,Tier 1,,workday,https://exactsciences.wd1.myworkdayjobs.com/Exact_Sciences,existing production adapter
+PacBio,Tier 1,,workday,https://pacbio.wd12.myworkdayjobs.com/PacBio-,existing production adapter
+Amgen,Tier 2,,workday,https://amgen.wd1.myworkdayjobs.com/Careers,existing production adapter
+Novartis,Tier 2,,workday,https://novartis.wd3.myworkdayjobs.com/Novartis_Careers,existing production adapter
+Genentech / Roche,Tier 2,,workday,https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE,existing production adapter
+Gilead Sciences,Tier 2,,workday,https://gilead.wd1.myworkdayjobs.com/gileadcareers,existing production adapter
+Bristol Myers Squibb,Tier 2,,workday,https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS,existing production adapter
+Merck / MSD,Tier 2,,workday,https://msd.wd5.myworkdayjobs.com/SearchJobs,existing production adapter
+AstraZeneca,Tier 2,,workday,https://astrazeneca.wd3.myworkdayjobs.com/Careers,existing production adapter
+Eli Lilly,Tier 2,,workday,https://lilly.wd115.myworkdayjobs.com/LLY,existing production adapter
+BioMarin,Tier 2,,workday,https://biomarpeople.wd3.myworkdayjobs.com/BioMar,existing production adapter
+insitro,Tier 3,,ashby,https://jobs.ashbyhq.com/insitro,existing production adapter
+Recursion,Tier 3,,greenhouse,https://job-boards.greenhouse.io/recursionpharmaceuticals,existing production adapter
+Tempus AI,Tier 3,,workday,https://tempus.wd5.myworkdayjobs.com/Tempus_Careers,existing production adapter
+Verge Genomics,Tier 3,,ashby,https://jobs.ashbyhq.com/verge-genomics,existing production adapter
+Valo Health,Tier 3,,greenhouse,https://job-boards.greenhouse.io/valohealth,existing production adapter
+Singular Genomics,Tier 1,,greenhouse,https://job-boards.greenhouse.io/singulargenomics,existing production adapter
+Ultima Genomics,Tier 1,,greenhouse,https://job-boards.greenhouse.io/ultimagenomics,existing production adapter
+Freenome,Tier 1,,greenhouse,https://job-boards.greenhouse.io/freenome,existing production adapter
+Personalis,Tier 1,,greenhouse,https://job-boards.greenhouse.io/personalisinc,existing production adapter
+BillionToOne,Tier 1,,greenhouse,https://job-boards.greenhouse.io/billiontoone,existing production adapter
+Parse Biosciences,Tier 2,,greenhouse,https://job-boards.greenhouse.io/parsebiosciences,existing production adapter
+Quantum-Si,Tier 2,,greenhouse,https://job-boards.greenhouse.io/quantumsi25,existing production adapter
+CareDx,Tier 2,,greenhouse,https://job-boards.greenhouse.io/caredxinc,existing production adapter
+Fabric Genomics,Tier 2,,greenhouse,https://job-boards.greenhouse.io/fabricgenomics,existing production adapter
+Boundless Bio,Tier 3,,greenhouse,https://job-boards.greenhouse.io/BoundlessBio,existing production adapter
+Tiny Health,Tier 1,microbiome/metagenomics,ashby,https://jobs.ashbyhq.com/tiny-health,v2.0 web-validated/configured
+Evvy,Tier 1,microbiome/metagenomics,ashby,https://jobs.ashbyhq.com/Evvy,v2.0 web-validated/configured
+Seed Health,Tier 1,microbiome,greenhouse,https://job-boards.greenhouse.io/seed,v2.0 web-validated/configured
+Pendulum Therapeutics,Tier 1,microbiome/metagenomics,lever,https://jobs.lever.co/pendulum,v2.0 web-validated/configured
+Vedanta Biosciences,Tier 1,microbiome therapeutics,greenhouse,https://job-boards.greenhouse.io/vedantabiosciences,v2.0 web-validated/configured
+Ferring Pharmaceuticals,Tier 1,microbiome/bioinformatics,workday,https://ferring.wd3.myworkdayjobs.com/Ferring,v2.0 web-validated/configured
+Karius,Tier 1,metagenomic infectious disease diagnostics,lever,https://jobs.lever.co/kariusdx,v2.0 web-validated/configured
+Locus Biosciences,Tier 1,microbiome/precision antibacterial,recruitee,https://locusbiosciences.recruitee.com,v2.0 web-validated/configured
+Metabiomics,Tier 1,microbiome/metagenomics,career_page,https://www.metabiomics.com/about-us/careers/,v2.0 web-validated/configured
+Persephone Biosciences,Tier 1,microbiome,career_page,https://persephone.bio/pages/careers,v2.0 web-validated/configured
+Seres Therapeutics,Tier 1,microbiome therapeutics,career_page,https://www.serestherapeutics.com/open-positions/,v2.0 web-validated/configured
+Metagenomi,Tier 1,metagenomics-derived genome editing,career_page,https://metagenomi.co/careers,v2.0 web-validated/configured
+Viome,Tier 1,microbiome/metatranscriptomics,career_page,https://www.viome.com/careers,v2.0 web-validated/configured
+Holobiome,Tier 2,microbiome therapeutics,career_page,https://holobiome.org/,v2.0 web-validated/configured
+CosmosID / Cmbio,Tier 1,microbial genomics/metagenomics,career_page,https://www.cosmosid.com/about-us/careers/,v2.0 web-validated/configured
+Zymo Research,Tier 1,microbiome/NGS/bioinformatics,career_page,https://www.zymoresearch.com/pages/careers,v2.0 web-validated/configured
+DNAnexus,Tier 1,genomics/cloud bioinformatics,smartrecruiters,https://careers.smartrecruiters.com/DNAnexus,v2.0 web-validated/configured
+Benchling,Tier 2,life-science informatics,ashby,https://jobs.ashbyhq.com/benchling,v2.0 web-validated/configured
+Oxford Nanopore Technologies,Tier 1,sequencing/bioinformatics,oracle,https://ejnh.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs,v2.0 web-validated/configured
+Helix,Tier 1,population genomics/clinical genomics,career_page,https://www.helix.com/company/careers,v2.0 web-validated/configured
+NewLimit,Tier 2,computational biology,greenhouse,https://job-boards.greenhouse.io/newlimit,v2.0 web-validated/configured
+Ansa Biotechnologies,Tier 2,DNA synthesis/informatics,greenhouse,https://job-boards.greenhouse.io/ansabiotechnologies,v2.0 web-validated/configured
+Sana Biotechnology,Tier 2,cell/gene therapy computational biology,greenhouse,https://job-boards.greenhouse.io/sanabiotech,v2.0 web-validated/configured
+Legend Biotech,Tier 2,cell therapy bioinformatics,greenhouse,https://job-boards.greenhouse.io/legendcareers,v2.0 web-validated/configured
+Orca Bio,Tier 2,cell therapy/computational,lever,https://jobs.lever.co/orcabiosystems,v2.0 web-validated/configured
+Beam Therapeutics,Tier 2,gene editing/computational biology,greenhouse,https://job-boards.greenhouse.io/beamtherapeutics,v2.0 web-validated/configured
+Prime Medicine,Tier 2,gene editing/computational biology,greenhouse,https://job-boards.greenhouse.io/primemedicine,v2.0 web-validated/configured
+Generate Biomedicines,Tier 2,computational biology,greenhouse,https://job-boards.greenhouse.io/generatebiomedicines,v2.0 web-validated/configured
+Chan Zuckerberg Biohub,Tier 1,genomics/computational biology,greenhouse,https://job-boards.greenhouse.io/biohub,v2.0 web-validated/configured
+Genesis Molecular AI,Tier 2,AI/computational biology,ashby,https://jobs.ashbyhq.com/genesis-molecular-ai,v2.0 web-validated/configured
+Kingdom,Tier 1,microbial genomics/computational biology,ashby,https://jobs.ashbyhq.com/Kingdom,v2.0 web-validated/configured
+LatchBio,Tier 2,bioinformatics infrastructure,ashby,https://jobs.ashbyhq.com/latchbio,v2.0 web-validated/configured
+Foresite Labs,Tier 2,computational/bioinformatics,ashby,https://jobs.ashbyhq.com/foresite-labs-fl2024-006,v2.0 web-validated/configured
+Radical Numerics,Tier 2,computational genomics,ashby,https://jobs.ashbyhq.com/radical-numerics,v2.0 web-validated/configured
+BIO Protocol,Tier 2,computational biology,ashby,https://jobs.ashbyhq.com/bio,v2.0 web-validated/configured
+Ginkgo Bioworks,Tier 2,synthetic biology/microbial engineering,greenhouse,https://job-boards.greenhouse.io/ginkgobioworks,v2.0 web-validated/configured
+Profluent,Tier 2,bioinformatics/NGS,greenhouse,https://job-boards.greenhouse.io/profluent,v2.0 web-validated/configured
+Altos Labs,Tier 2,genomics/computational biology,greenhouse,https://job-boards.greenhouse.io/altoslabs,v2.0 web-validated/configured
+Arc Institute,Tier 2,computational biology/genomics,greenhouse,https://job-boards.greenhouse.io/arcinstitute,v2.0 web-validated/configured
+Stylus Medicine,Tier 2,computational biology/genome engineering,greenhouse,https://job-boards.greenhouse.io/stylusmedicine,v2.0 web-validated/configured
+Edison Scientific,Tier 2,AI/computational biology,ashby,https://jobs.ashbyhq.com/Edison Scientific,v2.0 web-validated/configured
+Valthos,Tier 2,computational biology,ashby,https://jobs.ashbyhq.com/valthos,v2.0 web-validated/configured
+Cajal Therapeutics,Tier 2,computational biology,greenhouse,https://job-boards.greenhouse.io/cajal-tx,v2.0 web-validated/configured
+PathAI,Tier 2,AI/pathology/bioinformatics,career_page,https://www.pathai.com/careers,v2.0 web-validated/configured
+Veracyte,Tier 1,diagnostics/bioinformatics/genomics,career_page,https://www.veracyte.com/company/careers/,v2.0 web-validated/configured
+Indigo Ag,Tier 2,microbial agriculture,career_page,https://www.indigoag.com/careers,v2.0 web-validated/configured
+Pivot Bio,Tier 2,microbial engineering/agriculture,career_page,https://www.pivotbio.com/open-positions,v2.0 web-validated/configured
+Schrodinger,Tier 3,computational life science,career_page,https://www.schrodinger.com/company/careers/,v2.0 web-validated/configured
+SOPHiA GENETICS,Tier 2,clinical genomics/data science,career_page,https://careers.sophiagenetics.com/jobs/search/job-search-US,v2.0 web-validated/configured
+GeneDx,Tier 1,clinical genomics,career_page,https://www.genedx.com/careers/openings/,v2.0 web-validated/configured
+Myriad Genetics,Tier 2,molecular diagnostics/genomics,career_page,https://myriad.com/careers/,v2.0 web-validated/configured
+Caris Life Sciences,Tier 1,precision oncology/genomics,career_page,https://www.carislifesciences.com/careers/,v2.0 web-validated/configured
+Color Health,Tier 2,population genomics,career_page,https://www.color.com/careers,v2.0 web-validated/configured
+Nautilus Biotechnology,Tier 2,proteomics/platform,career_page,https://www.nautilus.bio/careers/,v2.0 web-validated/configured
+Vizgen,Tier 2,spatial genomics,career_page,https://vizgen.com/careers/,v2.0 web-validated/configured
+Scale Biosciences,Tier 2,single-cell genomics,career_page,https://scale.bio/careers/,v2.0 web-validated/configured
+Mission Bio,Tier 2,single-cell genomics,career_page,https://missionbio.com/careers/,v2.0 web-validated/configured
+Standard BioTools,Tier 2,life-science tools,career_page,https://www.standardbio.com/careers,v2.0 web-validated/configured
+Akoya Biosciences,Tier 2,spatial biology,career_page,https://www.akoyabio.com/careers/,v2.0 web-validated/configured
+QIAGEN,Tier 2,genomics/molecular diagnostics,career_page,https://careers.qiagen.com/,v2.0 web-validated/configured
+Thermo Fisher Scientific,Tier 2,sequencing/life-science tools,career_page,https://jobs.thermofisher.com/,v2.0 web-validated/configured
+Agilent Technologies,Tier 2,genomics/life-science tools,career_page,https://careers.agilent.com/,v2.0 web-validated/configured
+Moderna,Tier 2,mRNA/computational biology,workday,https://modernatx.wd1.myworkdayjobs.com/M_tx,v2.0 web-validated/configured
+Regeneron,Tier 2,genomics/computational biology,workday,https://regeneron.wd1.myworkdayjobs.com/Careers,v2.0 web-validated/configured
+Vertex Pharmaceuticals,Tier 2,computational genomics,workday,https://vrtx.wd501.myworkdayjobs.com/Vertex_Careers,v2.0 web-validated/configured
+Alnylam Pharmaceuticals,Tier 2,RNA therapeutics/genomics,career_page,https://www.alnylam.com/careers,v2.0 web-validated/configured

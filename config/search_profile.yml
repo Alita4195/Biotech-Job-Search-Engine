@@ -1,0 +1,149 @@
+# PERSONALIZE THIS FILE BEFORE TRUSTING THE RANKINGS.
+# The collector/company infrastructure is reusable; this file is the user-specific layer.
+profile_name: "Starter computational biology profile"
+profile_status: "starter_needs_resume_personalization"
+
+# Helpful context for ChatGPT. These fields are descriptive; the scorer ignores them.
+target_summary: >-
+  Replace this with a 2-4 sentence description derived from your resume: target role families,
+  scientific domains, seniority, work model/location, and important exclusions.
+resume_strengths: []
+target_titles: []
+avoid_titles: []
+preferred_locations: []
+compensation_notes: ""
+
+score_bands:
+  exceptional: 85
+  strong: 75
+  review: 65
+
+# First matching rule wins. Patterns are regular expressions, case-insensitive.
+role_rules:
+  - name: core_bioinformatics_computational_biology
+    score: 30
+    patterns:
+      - "bioinformatic"
+      - "computational biolog"
+      - "computational genomic"
+  - name: applications_bioinformatics
+    score: 27
+    patterns:
+      - "applications?.*(bioinformatic|computational|genomic|sequenc)"
+      - "field applications?.*(bioinformatic|computational|genomic|sequenc)"
+  - name: adjacent_computational_science
+    score: 20
+    patterns:
+      - "computational scientist"
+      - "informatics scientist"
+      - "statistical genetic"
+  - name: domain_data_science
+    score: 18
+    patterns:
+      - "genomic.*data scientist"
+      - "microbiome.*data scientist"
+      - "omics.*data scientist"
+  - name: generic_data_science
+    score: 10
+    patterns:
+      - "data scientist"
+      - "data science"
+  - name: fallback_scientist
+    score: 5
+    patterns:
+      - "scientist"
+  - name: default
+    score: 2
+    patterns: [".*"]
+
+# Additive categories, capped by the scorer. Customize weights to reflect your actual strengths.
+domain_rules:
+  - name: sequencing_genomics
+    weight: 10
+    patterns: ["\\bngs\\b", "sequenc", "genom", "whole[- ]genome", "\\bwgs\\b"]
+  - name: microbiome_metagenomics
+    weight: 8
+    patterns: ["metagenom", "microbiome", "microbial genom", "16s"]
+  - name: oncology_ctdna
+    weight: 7
+    patterns: ["oncolog", "ctdna", "cfdna", "\\bmrd\\b", "liquid biopsy", "cancer"]
+  - name: methylation_epigenomics
+    weight: 7
+    patterns: ["methyl", "5hmc", "epigen"]
+  - name: transcriptomics_multiomics
+    weight: 5
+    patterns: ["rna[- ]seq", "transcriptom", "multi[- ]omic", "multiomic"]
+
+technical_rules:
+  - {name: programming, weight: 4, patterns: ["python", "\\br\\b"]}
+  - {name: pipelines_workflows, weight: 4, patterns: ["pipeline", "workflow", "nextflow", "snakemake"]}
+  - {name: statistics_ml, weight: 4, patterns: ["statistical", "machine learning", "classification", "estimat", "biostatistic"]}
+  - {name: compute, weight: 3, patterns: ["hpc", "slurm", "cloud", "distributed", "linux"]}
+  - {name: sequencing_formats, weight: 3, patterns: ["bam", "vcf", "alignment", "\\bngs\\b", "sequenc"]}
+  - {name: reproducibility, weight: 2, patterns: ["git", "reproduc", "productioniz", "open-source"]}
+
+operating_model_rules:
+  - {name: cross_functional, weight: 3, patterns: ["cross[- ]functional", "multidisciplinary", "stakeholder"]}
+  - {name: wet_lab_collaboration, weight: 3, patterns: ["wet[- ]lab", "lab scientist", "experimental scientist", "assay team"]}
+  - {name: method_development, weight: 3, patterns: ["method develop", "evaluate.*method", "develop.*pipeline", "develop.*workflow"]}
+  - {name: product_validation, weight: 3, patterns: ["validation", "commercializ", "product develop", "productioniz", "launch", "release"]}
+  - {name: communication, weight: 3, patterns: ["present", "publication", "webinar", "best practice", "customer", "communicat"]}
+
+leadership_rules:
+  - {name: technical_leadership, weight: 4, patterns: ["technical lead", "lead efforts", "subject matter expert", "analytical strategy"]}
+  - {name: people_leadership, weight: 3, patterns: ["mentor", "supervis", "manage a team", "direct report", "people manager"]}
+  - {name: project_leadership, weight: 2, patterns: ["project lead", "project leadership", "prioritiz", "delegate"]}
+  - {name: cross_functional, weight: 1, patterns: ["cross[- ]functional", "stakeholder"]}
+
+# Adjust these after reviewing your resume and career goals.
+seniority_rules:
+  - {name: executive, adjustment: -50, patterns: ["vice president", "\\bvp\\b", "executive director", "chief ", "head of"]}
+  - {name: director, adjustment: -20, patterns: ["associate director", "\\bdirector\\b"]}
+  - {name: junior, adjustment: -18, patterns: ["junior", "entry[- ]level"]}
+
+penalty_rules:
+  - name: generic_data_science
+    adjustment: -8
+    title_patterns: ["data scientist", "data science"]
+    unless_title_patterns: ["bioinformatic", "genom", "microbiome", "metagenom", "computational biolog"]
+  - name: engineering_mismatch
+    adjustment: -20
+    title_patterns: ["software engineer", "data engineer", "devops", "site reliability", "computer vision", "computational chemistry", "cheminformatic"]
+
+# Interaction bonuses are optional. Use them only after calibration demonstrates a distinctive niche.
+interaction_rules: []
+
+location:
+  # Set enabled=false if you do not want geographic gating.
+  enabled: true
+  allow_ambiguous: true
+  allowed_patterns:
+    - "united states"
+    - "u\\.?s\\.?"
+    - "us[- ]remote"
+    - "remote[- /]us"
+  excluded_patterns:
+    - "india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai"
+    - "united kingdom|\\buk\\b|london|cambridge,? england|oxford,? england"
+    - "canada|toronto|vancouver|montreal"
+    - "germany|berlin|munich|münchen"
+    - "france|paris"
+    - "switzerland|basel|zurich|zug"
+    - "spain|barcelona|madrid"
+    - "italy|milan|rome"
+    - "netherlands|amsterdam"
+    - "australia|sydney|melbourne"
+    - "japan|tokyo"
+    - "singapore"
+    - "china|shanghai|beijing"
+    - "ireland|dublin"
+    - "brazil|sao paulo|são paulo|rio de janeiro"
+    - "denmark|copenhagen"
+    - "sweden|stockholm|gothenburg"
+    - "norway|oslo"
+    - "belgium|brussels"
+    - "austria|vienna"
+    - "poland|warsaw|krakow"
+    - "israel|tel aviv|haifa"
+    - "south korea|seoul"
+    - "taiwan|taipei"

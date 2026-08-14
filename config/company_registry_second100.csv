@@ -1,0 +1,101 @@
+name,priority,focus,platform,route,enabled
+Bio-Rad,Tier 2,life science tools; diagnostics; genomics,browser_career,https://careers.bio-rad.com/homepage,True
+Bruker,Tier 2,life science instrumentation; spatial/proteomics,browser_career,https://www.bruker.com/en/careers.html,True
+Revvity,Tier 2,diagnostics; informatics; genomics,browser_career,https://jobs.revvity.com/search-jobs,True
+Bio-Techne,Tier 2,spatial biology; diagnostics; genomics,browser_career,https://www.bio-techne.com/about/careers,True
+Waters Corporation,Tier 3,analytical science; informatics,browser_career,https://www.waters.com/nextgen/us/en/about-waters/careers.html,True
+Azenta Life Sciences,Tier 2,genomics services; biobanking; sequencing,browser_career,https://careers.azenta.com/,True
+Labcorp,Tier 2,clinical genomics; diagnostics,browser_career,https://careers.labcorp.com/global/en/search-results,True
+Quest Diagnostics,Tier 2,clinical diagnostics; genomics,browser_career,https://careers.questdiagnostics.com/search-jobs,True
+NeoGenomics,Tier 1,oncology genomics; diagnostics,browser_career,https://careers.neogenomics.com/,True
+Hologic,Tier 2,molecular diagnostics,browser_career,https://careers.hologic.com/,True
+Promega,Tier 3,molecular biology; genomics tools,career_page,https://www.promega.com/aboutus/careers/,True
+New England Biolabs,Tier 2,genomics reagents; sequencing,career_page,https://www.neb.com/en-us/about-neb/careers,True
+Takara Bio USA,Tier 2,genomics; single-cell; NGS,career_page,https://www.takarabio.com/about/careers,True
+Charles River Laboratories,Tier 3,preclinical; genomics services,browser_career,https://jobs.criver.com/,True
+One Codex,Tier 1,microbial genomics; metagenomics,career_page,https://www.onecodex.com/careers,True
+Clear Labs,Tier 1,microbial genomics; sequencing; food safety,browser_career,https://www.clearlabs.com/careers/,True
+Day Zero Diagnostics,Tier 1,infectious disease genomics; WGS,career_page,https://www.dayzerodiagnostics.com/careers,True
+Geneoscopy,Tier 1,microbiome; diagnostics; RNA biomarkers,browser_career,https://geneoscopy.com/careers/,True
+MyOme,Tier 1,clinical genomics; whole-genome analysis,browser_career,https://www.myome.com/careers,True
+Microbiome Insights,Tier 1,microbiome; metagenomics services,career_page,https://microbiomeinsights.com/careers/,True
+Biomica,Tier 1,microbiome therapeutics,career_page,https://www.biomicamed.com/careers,True
+Enterome,Tier 1,microbiome therapeutics,career_page,https://www.enterome.com/careers/,True
+MaaT Pharma,Tier 1,microbiome therapeutics; microbiota,career_page,https://www.maatpharma.com/careers/,True
+Microba Life Sciences,Tier 1,metagenomics; microbiome diagnostics,career_page,https://microba.com/careers/,True
+BiomeSense,Tier 1,microbiome; longitudinal metagenomics,career_page,https://biomesense.com/careers,True
+Pattern Bioscience,Tier 1,infectious disease; microbial phenotyping,career_page,https://patternbioscience.com/careers/,True
+Adaptive Phage Therapeutics,Tier 1,phage therapy; bacterial genomics,career_page,https://aphage.com/careers/,True
+BiomX,Tier 1,phage therapy; microbiome,career_page,https://www.biomx.com/careers/,True
+SNIPR Biome,Tier 1,CRISPR antimicrobials; microbiome,career_page,https://sniprbiome.com/careers/,True
+Eligo Bioscience,Tier 1,microbiome engineering; CRISPR,career_page,https://eligo.bio/careers/,True
+Microbiotica,Tier 1,microbiome therapeutics; metagenomics,career_page,https://microbiotica.com/careers/,True
+Concerto Biosciences,Tier 1,microbial communities; synthetic ecology,career_page,https://www.concertobio.com/careers,True
+FitBiomics,Tier 1,microbiome; probiotics; metagenomics,career_page,https://fitbiomics.com/careers/,True
+Tessera Therapeutics,Tier 1,gene writing; computational biology,greenhouse,tesseratherapeutics,True
+Caribou Biosciences,Tier 2,CRISPR; cell therapy,greenhouse,cariboubiosciencesinc,True
+Scribe Therapeutics,Tier 1,CRISPR; genetic medicine,greenhouse,scribetherapeutics,True
+Epicrispr Biotechnologies,Tier 1,CRISPR; epigenetic regulation; NGS,greenhouse,epicbio,True
+Mammoth Biosciences,Tier 1,CRISPR diagnostics; genetic medicine,greenhouse,mammothbiosciences,True
+Verve Therapeutics,Tier 2,gene editing; genomics,greenhouse,vervetherapeutics,True
+ArsenalBio,Tier 2,cell therapy; computational biology,greenhouse,arsenalbio,True
+Lyell Immunopharma,Tier 2,cell therapy; oncology,greenhouse,lyell,True
+Allogene Therapeutics,Tier 2,cell therapy; genomics,greenhouse,allogene,True
+CARGO Therapeutics,Tier 2,cell therapy; oncology,greenhouse,cargotherapeutics,True
+Century Therapeutics,Tier 2,cell therapy; computational biology,greenhouse,centurytherapeutics,True
+Nkarta,Tier 2,cell therapy; oncology,greenhouse,nkarta,True
+Fate Therapeutics,Tier 2,cell therapy; genomics,greenhouse,fatetherapeutics,True
+Kyverna Therapeutics,Tier 2,cell therapy; autoimmune,greenhouse,kyvernatx,True
+Umoja Biopharma,Tier 2,cell therapy; synthetic biology,greenhouse,umojabiopharma,True
+Capstan Therapeutics,Tier 2,in vivo cell engineering,greenhouse,capstantx,True
+Cartesian Therapeutics,Tier 2,cell therapy; RNA,greenhouse,cartesiantherapeutics,True
+Intellia Therapeutics,Tier 1,CRISPR; genomic innovation,career_page,https://www.intelliatx.com/careers/join-us/,True
+CRISPR Therapeutics,Tier 2,CRISPR; cell therapy,browser_career,https://www.crisprtx.com/about-us/careers,True
+Editas Medicine,Tier 2,CRISPR; genetic medicine,browser_career,https://www.editasmedicine.com/careers/,True
+eGenesis,Tier 2,gene editing; xenotransplantation,career_page,https://egenesisbio.com/careers,True
+Arbor Biotechnologies,Tier 1,CRISPR; computational discovery,browser_career,https://arbor.bio/careers/,True
+Rocket Pharmaceuticals,Tier 2,gene therapy; rare disease,browser_career,https://careers.rocketpharma.com/,True
+Ultragenyx,Tier 2,rare disease; gene therapy,browser_career,https://careers.ultragenyx.com/,True
+Sarepta Therapeutics,Tier 2,genetic medicine; RNA; gene therapy,browser_career,https://careers.sarepta.com/,True
+Ionis Pharmaceuticals,Tier 2,RNA therapeutics; genomics,browser_career,https://www.ionis.com/careers/,True
+Arrowhead Pharmaceuticals,Tier 2,RNAi; genomics,browser_career,https://arrowheadpharma.com/careers/,True
+Wave Life Sciences,Tier 2,RNA medicine; genomics,greenhouse,wavelifesciences,True
+Dyne Therapeutics,Tier 2,RNA therapeutics; genetic disease,greenhouse,dynetherapeutics,True
+Entrada Therapeutics,Tier 2,intracellular therapeutics; RNA,greenhouse,entradatx,True
+Avidity Biosciences,Tier 2,RNA therapeutics; rare disease,browser_career,https://www.aviditybiosciences.com/careers/,True
+Arcturus Therapeutics,Tier 2,RNA medicines; infectious disease,browser_career,https://arcturusrx.com/careers/,True
+Vir Biotechnology,Tier 2,infectious disease; computational biology,greenhouse,virbiotechnology,True
+Denali Therapeutics,Tier 2,neurodegeneration; genetics,greenhouse,denalitherapeutics,True
+Neumora Therapeutics,Tier 2,precision neuroscience; data science,greenhouse,neumoratx,True
+Biohaven,Tier 3,precision medicine; neuroscience,browser_career,https://www.biohaven.com/careers,True
+Alumis,Tier 2,precision immunology; computational biology,greenhouse,alumis,True
+Apogee Therapeutics,Tier 3,immunology; translational science,greenhouse,apogeetherapeutics,True
+Revolution Medicines,Tier 2,precision oncology; genomics,greenhouse,revolutionmedicines,True
+Relay Therapeutics,Tier 2,computational drug discovery; oncology,greenhouse,relaytherapeutics,True
+Kura Oncology,Tier 3,precision oncology,career_page,https://www.kuraoncology.com/careers/,True
+Arcus Biosciences,Tier 3,oncology; biomarkers,greenhouse,arcusbiosciences,True
+Iovance Biotherapeutics,Tier 3,cell therapy; oncology,browser_career,https://www.iovance.com/careers/,True
+ImmunityBio,Tier 3,immunotherapy; oncology,browser_career,https://immunitybio.com/careers/,True
+Janux Therapeutics,Tier 2,oncology; computational discovery,greenhouse,januxtx,True
+IDEAYA Biosciences,Tier 2,precision oncology; biomarkers,greenhouse,ideayabiosciences,True
+Nurix Therapeutics,Tier 2,targeted protein degradation; genomics,greenhouse,nurixtx,True
+Kymera Therapeutics,Tier 2,targeted protein degradation,greenhouse,kymeratx,True
+C4 Therapeutics,Tier 3,targeted protein degradation; oncology,greenhouse,c4therapeutics,True
+Monte Rosa Therapeutics,Tier 2,molecular glue; genomics,greenhouse,monterosatherapeutics,True
+Arvinas,Tier 3,targeted protein degradation,browser_career,https://www.arvinas.com/careers/,True
+BridgeBio,Tier 2,genetic disease; precision medicine,greenhouse,bridgebio,True
+AbCellera,Tier 2,antibody discovery; computational biology,greenhouse,abcellera,True
+Absci,Tier 2,AI drug discovery; protein design,greenhouse,absci,True
+Deep Genomics,Tier 1,AI; RNA; genomics,lever,deepgenomics,True
+Owkin,Tier 2,AI; multimodal biology; oncology,lever,owkin,True
+Flatiron Health,Tier 2,oncology data science; clinical data,greenhouse,flatironhealth,True
+Komodo Health,Tier 3,health data science; real-world data,greenhouse,komodohealth,True
+Truveta,Tier 3,clinical data; data science,greenhouse,truveta,True
+Nomic Bio,Tier 2,proteomics; computational biology,ashby,nomic,True
+Seer,Tier 2,proteomics; computational biology,greenhouse,seerinc,True
+Quanterix,Tier 3,biomarkers; diagnostics,browser_career,https://www.quanterix.com/careers/,True
+Deepcell,Tier 2,AI cell biology; computational biology,greenhouse,deepcell,True
+Cytek Biosciences,Tier 3,single-cell; flow cytometry,browser_career,https://cytekbio.com/careers/,True
+Watchmaker Genomics,Tier 1,NGS; genomics tools,greenhouse,watchmakergenomics,True
+BioSkryb Genomics,Tier 1,single-cell genomics; NGS,browser_career,https://bioskryb.com/careers/,True
+Resolve Biosciences,Tier 2,spatial transcriptomics; genomics,browser_career,https://resolvebiosciences.com/careers/,True

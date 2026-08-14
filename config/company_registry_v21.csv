@@ -1,0 +1,102 @@
+Company,Priority,Focus,Platform,Enabled,Career Endpoint,Zero Result Policy
+Element Biosciences,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/elementbiosciences,warn if zero
+Natera,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/natera,warn if zero
+GRAIL,Tier 1,,lever,True,,warn if zero
+Foundation Medicine,Tier 1,,foundation,True,https://careers.foundationmedicine.com/jobs/search,warn if zero
+10x Genomics,Tier 1,,kula,True,https://careers.kula.ai/10xgenomics,warn if zero
+Twist Bioscience,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/twistbioscience,warn if zero
+Illumina,Tier 1,,workday,True,https://illumina.wd1.myworkdayjobs.com/illumina-careers,warn if zero
+Guardant Health,Tier 1,,workday,True,https://gh.wd1.myworkdayjobs.com/gh,warn if zero
+Exact Sciences,Tier 1,,workday,True,https://exactsciences.wd1.myworkdayjobs.com/Exact_Sciences,warn if zero
+PacBio,Tier 1,,workday,True,https://pacbio.wd12.myworkdayjobs.com/PacBio-,warn if zero
+Adaptive Biotechnologies,Tier 1,,adaptive,False,https://www.adaptivebiotech.com/career-listings/listing/,warn if zero
+Amgen,Tier 2,,workday,True,https://amgen.wd1.myworkdayjobs.com/Careers,warn if zero
+Novartis,Tier 2,,workday,True,https://novartis.wd3.myworkdayjobs.com/Novartis_Careers,warn if zero
+Genentech / Roche,Tier 2,,workday,True,https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE,warn if zero
+Gilead Sciences,Tier 2,,workday,True,https://gilead.wd1.myworkdayjobs.com/gileadcareers,warn if zero
+Bristol Myers Squibb,Tier 2,,workday,True,https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS,warn if zero
+Merck / MSD,Tier 2,,workday,True,https://msd.wd5.myworkdayjobs.com/SearchJobs,warn if zero
+AstraZeneca,Tier 2,,workday,True,https://astrazeneca.wd3.myworkdayjobs.com/Careers,warn if zero
+Eli Lilly,Tier 2,,workday,True,https://lilly.wd115.myworkdayjobs.com/LLY,warn if zero
+BioMarin,Tier 2,,workday,True,https://biomarpeople.wd3.myworkdayjobs.com/BioMar,warn if zero
+insitro,Tier 3,,ashby,True,,warn if zero
+Recursion,Tier 3,,greenhouse,True,https://job-boards.greenhouse.io/recursionpharmaceuticals,warn if zero
+Tempus AI,Tier 3,,workday,True,https://tempus.wd5.myworkdayjobs.com/Tempus_Careers,warn if zero
+Verge Genomics,Tier 3,,ashby,True,,warn if zero
+Valo Health,Tier 3,,greenhouse,True,https://job-boards.greenhouse.io/valohealth,warn if zero
+Singular Genomics,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/singulargenomics,warn if zero
+Ultima Genomics,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/ultimagenomics,warn if zero
+Freenome,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/freenome,warn if zero
+Personalis,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/personalisinc,warn if zero
+BillionToOne,Tier 1,,greenhouse,True,https://job-boards.greenhouse.io/billiontoone,warn if zero
+Parse Biosciences,Tier 2,,greenhouse,True,https://job-boards.greenhouse.io/parsebiosciences,warn if zero
+Quantum-Si,Tier 2,,greenhouse,True,https://job-boards.greenhouse.io/quantumsi25,warn if zero
+CareDx,Tier 2,,greenhouse,True,https://job-boards.greenhouse.io/caredxinc,warn if zero
+Fabric Genomics,Tier 2,,greenhouse,True,https://job-boards.greenhouse.io/fabricgenomics,warn if zero
+Boundless Bio,Tier 3,,greenhouse,True,https://job-boards.greenhouse.io/BoundlessBio,warn if zero
+Tiny Health,Tier 1,microbiome/metagenomics,ashby,True,,warn if zero
+Evvy,Tier 1,microbiome/metagenomics,ashby,True,,warn if zero
+Seed Health,Tier 1,microbiome,greenhouse,True,https://job-boards.greenhouse.io/seed,warn if zero
+Pendulum Therapeutics,Tier 1,microbiome/metagenomics,lever,True,,warn if zero
+Vedanta Biosciences,Tier 1,microbiome therapeutics,greenhouse,True,https://job-boards.greenhouse.io/vedantabiosciences,warn if zero
+Ferring Pharmaceuticals,Tier 1,microbiome/bioinformatics,workday,True,https://ferring.wd3.myworkdayjobs.com/Ferring,warn if zero
+Karius,Tier 1,metagenomic infectious disease diagnostics,lever,True,,warn if zero
+Locus Biosciences,Tier 1,microbiome/precision antibacterial,recruitee,True,,warn if zero
+Metabiomics,Tier 1,microbiome/metagenomics,career_page,True,https://www.metabiomics.com/about-us/careers/,warn if zero
+Persephone Biosciences,Tier 1,microbiome,career_page,True,https://persephone.bio/pages/careers,warn if zero
+Seres Therapeutics,Tier 1,microbiome therapeutics,career_page,True,https://www.serestherapeutics.com/open-positions/,warn if zero
+Metagenomi,Tier 1,metagenomics-derived genome editing,career_page,True,https://metagenomi.co/careers,warn if zero
+Viome,Tier 1,microbiome/metatranscriptomics,career_page,True,https://www.viome.com/careers,warn if zero
+Holobiome,Tier 2,microbiome therapeutics,career_page,True,https://holobiome.org/,warn if zero
+CosmosID / Cmbio,Tier 1,microbial genomics/metagenomics,career_page,True,https://www.cosmosid.com/about-us/careers/,warn if zero
+Zymo Research,Tier 1,microbiome/NGS/bioinformatics,career_page,True,https://www.zymoresearch.com/pages/careers,warn if zero
+DNAnexus,Tier 1,genomics/cloud bioinformatics,smartrecruiters,True,,warn if zero
+Benchling,Tier 2,life-science informatics,ashby,True,,warn if zero
+Oxford Nanopore Technologies,Tier 1,sequencing/bioinformatics,oracle,True,https://ejnh.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs,warn if zero
+Helix,Tier 1,population genomics/clinical genomics,career_page,True,https://www.helix.com/company/careers,warn if zero
+NewLimit,Tier 2,computational biology,greenhouse,True,https://job-boards.greenhouse.io/newlimit,warn if zero
+Ansa Biotechnologies,Tier 2,DNA synthesis/informatics,greenhouse,True,https://job-boards.greenhouse.io/ansabiotechnologies,warn if zero
+Sana Biotechnology,Tier 2,cell/gene therapy computational biology,greenhouse,True,https://job-boards.greenhouse.io/sanabiotech,warn if zero
+Legend Biotech,Tier 2,cell therapy bioinformatics,greenhouse,True,https://job-boards.greenhouse.io/legendcareers,warn if zero
+Orca Bio,Tier 2,cell therapy/computational,lever,True,,warn if zero
+Beam Therapeutics,Tier 2,gene editing/computational biology,greenhouse,True,https://job-boards.greenhouse.io/beamtherapeutics,warn if zero
+Prime Medicine,Tier 2,gene editing/computational biology,greenhouse,True,https://job-boards.greenhouse.io/primemedicine,warn if zero
+Generate Biomedicines,Tier 2,computational biology,greenhouse,True,https://job-boards.greenhouse.io/generatebiomedicines,warn if zero
+Chan Zuckerberg Biohub,Tier 1,genomics/computational biology,greenhouse,True,https://job-boards.greenhouse.io/biohub,warn if zero
+Genesis Molecular AI,Tier 2,AI/computational biology,ashby,True,,warn if zero
+Kingdom,Tier 1,microbial genomics/computational biology,ashby,True,,warn if zero
+LatchBio,Tier 2,bioinformatics infrastructure,ashby,True,,warn if zero
+Foresite Labs,Tier 2,computational/bioinformatics,greenhouse,True,https://job-boards.greenhouse.io/foresitelabs,warn if zero
+Radical Numerics,Tier 2,computational genomics,ashby,True,,warn if zero
+BIO Protocol,Tier 2,computational biology,ashby,True,,warn if zero
+Ginkgo Bioworks,Tier 2,synthetic biology/microbial engineering,greenhouse,True,https://job-boards.greenhouse.io/ginkgobioworks,warn if zero
+Profluent,Tier 2,bioinformatics/NGS,greenhouse,True,https://job-boards.greenhouse.io/profluent,warn if zero
+Altos Labs,Tier 2,genomics/computational biology,greenhouse,True,https://job-boards.greenhouse.io/altoslabs,warn if zero
+Arc Institute,Tier 2,computational biology/genomics,greenhouse,True,https://job-boards.greenhouse.io/arcinstitute,warn if zero
+Stylus Medicine,Tier 2,computational biology/genome engineering,greenhouse,True,https://job-boards.greenhouse.io/stylusmedicine,warn if zero
+Edison Scientific,Tier 2,AI/computational biology,ashby,True,,warn if zero
+Valthos,Tier 2,computational biology,ashby,True,,warn if zero
+Cajal Therapeutics,Tier 2,computational biology,greenhouse,True,https://job-boards.greenhouse.io/cajal-tx,warn if zero
+PathAI,Tier 2,AI/pathology/bioinformatics,career_page,True,https://www.pathai.com/careers,warn if zero
+Veracyte,Tier 1,diagnostics/bioinformatics/genomics,career_page,True,https://www.veracyte.com/company/careers/,warn if zero
+Indigo Ag,Tier 2,microbial agriculture,career_page,True,https://www.indigoag.com/careers,warn if zero
+Pivot Bio,Tier 2,microbial engineering/agriculture,career_page,True,https://www.pivotbio.com/open-positions,warn if zero
+Schrodinger,Tier 3,computational life science,career_page,True,https://www.schrodinger.com/company/careers/,warn if zero
+SOPHiA GENETICS,Tier 2,clinical genomics/data science,career_page,True,https://careers.sophiagenetics.com/jobs/search/job-search-US,warn if zero
+GeneDx,Tier 1,clinical genomics,career_page,True,https://www.genedx.com/careers/openings/,warn if zero
+Myriad Genetics,Tier 2,molecular diagnostics/genomics,oracle,True,https://ekgn.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs,warn if zero
+Caris Life Sciences,Tier 1,precision oncology/genomics,workday,True,https://carislifesciences.wd12.myworkdayjobs.com/CLS,warn if zero
+Color Health,Tier 2,population genomics,career_page,True,https://www.color.com/careers,warn if zero
+Nautilus Biotechnology,Tier 2,proteomics/platform,career_page,True,https://www.nautilus.bio/careers/,warn if zero
+Vizgen,Tier 2,spatial genomics,career_page,True,https://vizgen.com/careers/,warn if zero
+Scale Biosciences,Tier 2,single-cell genomics,career_page,True,https://scale.bio/,verified empty
+Mission Bio,Tier 2,single-cell genomics,career_page,True,https://www.missionbio.com/company/careers,warn if zero
+Standard BioTools,Tier 2,life-science tools,career_page,True,https://www.standardbio.com/careers,warn if zero
+Akoya Biosciences,Tier 2,spatial biology,career_page,True,https://www.akoyabio.com/careers/,warn if zero
+QIAGEN,Tier 2,genomics/molecular diagnostics,workday,True,https://qiagen.wd502.myworkdayjobs.com/QIAGEN,warn if zero
+Thermo Fisher Scientific,Tier 2,sequencing/life-science tools,career_page,True,https://jobs.thermofisher.com/,warn if zero
+Agilent Technologies,Tier 2,genomics/life-science tools,workday,True,https://agilent.wd5.myworkdayjobs.com/Agilent_Careers,warn if zero
+Moderna,Tier 2,mRNA/computational biology,workday,True,https://modernatx.wd1.myworkdayjobs.com/M_tx,warn if zero
+Regeneron,Tier 2,genomics/computational biology,workday,True,https://regeneron.wd1.myworkdayjobs.com/Careers,warn if zero
+Vertex Pharmaceuticals,Tier 2,computational genomics,workday,True,https://vrtx.wd501.myworkdayjobs.com/Vertex_Careers,warn if zero
+Alnylam Pharmaceuticals,Tier 2,RNA therapeutics/genomics,career_page,True,https://www.alnylam.com/careers,warn if zero

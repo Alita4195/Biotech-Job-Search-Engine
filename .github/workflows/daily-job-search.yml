@@ -1,0 +1,131 @@
+name: Daily biotech job search
+
+# The public template is manual-only by default.
+# After personalizing config/search_profile.yml, add the schedule shown in
+# docs/GITHUB_SETUP.md if you want automated daily runs.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: daily-biotech-job-search
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install engine
+        run: |
+          python -m pip install -e '.[browser]'
+          playwright install chromium --with-deps
+
+      - name: Restore previous job history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          mkdir -p output previous-state
+          WORKFLOW_FILE="daily-job-search.yml"
+          PREV_RUN_ID="$(gh run list --workflow "$WORKFLOW_FILE" --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty' || true)"
+          if [ -n "$PREV_RUN_ID" ]; then
+            echo "Restoring state from workflow run $PREV_RUN_ID"
+            gh run download "$PREV_RUN_ID" -n job-search-state -D previous-state || true
+            if [ -f previous-state/jobs.sqlite ]; then
+              cp previous-state/jobs.sqlite output/jobs.sqlite
+            fi
+          else
+            echo "No previous successful run found; starting a new history database."
+          fi
+
+      - name: Validate personalized search profile
+        run: python scripts/check_profile.py
+
+      - name: Run job search
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          biotech-jobs \
+            --config config/companies.yml \
+            --db output/jobs.sqlite \
+            --csv output/ranked_jobs.csv \
+            --new-csv output/new_matches.csv \
+            --min-score 65 \
+            --request-timeout 12 \
+            --company-timeout 75 | tee output/run_summary.json
+
+      - name: Check for new matches
+        id: matches
+        shell: bash
+        run: |
+          if [ -s output/new_matches.csv ]; then
+            echo "has_new=true" >> "$GITHUB_OUTPUT"
+            COUNT=$(( $(wc -l < output/new_matches.csv) - 1 ))
+            if [ "$COUNT" -lt 0 ]; then COUNT=0; fi
+            echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_new=false" >> "$GITHUB_OUTPUT"
+            echo "count=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check email configuration
+        id: email_config
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        shell: bash
+        run: |
+          if [ -n "$SMTP_HOST" ] && [ -n "$SMTP_PASSWORD" ] && [ -n "$EMAIL_TO" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Email secrets are not configured; notification will be skipped for this run."
+          fi
+
+      - name: Email new matches
+        if: steps.matches.outputs.has_new == 'true' && steps.email_config.outputs.configured == 'true'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_USE_SSL: ${{ secrets.SMTP_USE_SSL }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python scripts/send_job_email.py output/new_matches.csv
+
+      - name: Upload persistent state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-search-state
+          path: output/jobs.sqlite
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-search-reports-${{ github.run_number }}
+          path: |
+            output/ranked_jobs.csv
+            output/new_matches.csv
+            output/run_summary.json
+          retention-days: 30
+          if-no-files-found: warn
