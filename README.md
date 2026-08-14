@@ -368,16 +368,9 @@ Contributions are welcome, particularly:
 Please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 For security concerns, see [`SECURITY.md`](SECURITY.md).
+
 ---
 
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
-
----
-
-## Acknowledgment
-
-This project started as a practical tool built during a real biotech job search. It was later generalized so the collection infrastructure could be shared while each user's ranking profile and calibration remained their own.
-
-If it helps you find a role worth applying to, the project is doing what it was built to do.
