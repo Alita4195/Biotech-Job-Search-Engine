@@ -1,10 +1,28 @@
 # Biotech Job Search Engine
 
-**A personalized job-search engine for biotech and life-science careers that searches company career pages directly, ranks openings against your background, and learns from the jobs you actually want to apply to.**
+A personalized job-search engine for biotech and life-science careers that searches company career pages directly, ranks openings against your background, and learns from the jobs you actually want to apply to.
 
-Built for people working in areas such as **bioinformatics, computational biology, genomics, sequencing, data science, microbiome, translational research, diagnostics, and adjacent life-science fields**.
+Built for people working in areas such as bioinformatics, computational biology, genomics, sequencing, data science, microbiome, translational research, diagnostics, and adjacent life-science fields.
 
-> **Resume → personalized search profile → company career sites → ranked matches → human calibration → better recommendations**
+How it works:
+
+```text
+Resume
+  ↓
+Search Profile
+  ↓
+Company Career Sites
+  ↓
+ATS Collectors + Normalization
+  ↓
+Scoring Engine
+  ↓
+Ranked Matches + SQLite History
+  ↓                  ↘
+Human Calibration     Email Alerts
+  ↓
+Improved Profile / Scoring
+```
 
 This is **not an auto-apply bot**. It automates the repetitive parts of *finding and prioritizing* jobs so you can spend your time on the applications that are actually worth pursuing.
 
@@ -12,7 +30,11 @@ This is **not an auto-apply bot**. It automates the repetitive parts of *finding
 
 ## Why I built this
 
-Biotech job searching is unusually fragmented.
+This project started as a practical tool built during a real biotech job search. It was later generalized so the collection infrastructure could be shared while each user's ranking profile and calibration remained their own.
+
+If it helps you find a role worth applying to, the project is doing what it was built to do.
+
+I found that biotech job searching is fragmented.
 
 A role that fits the same person might be called:
 
@@ -20,7 +42,6 @@ A role that fits the same person might be called:
 - Bioinformatics Scientist
 - Data Scientist
 - Applications Scientist
-- Principal Scientist
 - Staff Scientist
 - Bioinformatics Manager
 - Computational Scientist
@@ -110,28 +131,6 @@ Job history is stored in SQLite. A scheduled run therefore distinguishes newly d
 The included GitHub Actions workflow can restore the previous job-history database, search the company universe, score and rank jobs, export reports, identify newly qualifying matches, optionally send them by email, and preserve state for the next run.
 
 The public template is **manual-only by default**. Users enable scheduling after personalizing and validating their profile.
-
----
-
-## How it works
-
-```text
-Resume
-  ↓
-Search Profile
-  ↓
-Company Career Sites
-  ↓
-ATS Collectors + Normalization
-  ↓
-Scoring Engine
-  ↓
-Ranked Matches + SQLite History
-  ↓                  ↘
-Human Calibration     Email Alerts
-  ↓
-Improved Profile / Scoring
-```
 
 ---
 
@@ -369,23 +368,6 @@ Contributions are welcome, particularly:
 Please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 For security concerns, see [`SECURITY.md`](SECURITY.md).
-
----
-
-## Roadmap ideas
-
-Potential future improvements include:
-
-- richer calibration analytics
-- easier profile-generation tooling
-- collector health reporting
-- automated detection of ATS migrations
-- improved location normalization
-- improved compensation normalization
-- optional digest summaries
-- additional life-science company universes
-- screenshots/examples of the calibration and email workflow
-
 ---
 
 ## License
