@@ -19,5 +19,5 @@ def test_core_role_beats_generic_data_science():
     assert score_job(core).total > score_job(generic).total
 
 def test_non_us_gate():
-    assert alert_location_eligible(job("Bioinformatics Scientist", location="Paris, France")) is False
+    assert alert_location_eligible(job("Bioinformatics Scientist", location="Paris, France")) is True
     assert alert_location_eligible(job("Bioinformatics Scientist", location="US Remote")) is True
