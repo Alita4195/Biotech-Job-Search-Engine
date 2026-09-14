@@ -68,6 +68,8 @@ role_rules:
     patterns:
       - "junior scientist"
       - "research scientist"
+      - "research officer"
+      - "research *"
       - "researcher"
   - name: fallback_scientist
     score: 5
