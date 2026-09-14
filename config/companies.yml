@@ -1,165 +1,154 @@
 companies:
-  # ==========================================
-  # 1. 芬兰本土与北欧核心食品、微生物科研机构
-  # ==========================================
-  - name: Natural Resources Institute Finland (Luke)
-    priority: Tier 1
-    platform: career_page
-    url: https://www.luke.fi/en/about-luke/career-in-luke
-    enabled: true
-    focus: food microbiology, natural resources, bio-based business, fermentation, dairy technology
-  - name: VTT Technical Research Centre of Finland
-    priority: Tier 1
-    platform: career_page
-    url: https://www.vttresearch.com/en/about-us/careers
-    enabled: true
-    focus: industrial biotechnology, synthetic biology, fermentation, food science
-  - name: University of Helsinki
-    priority: Tier 1
-    platform: career_page
-    url: https://www.helsinki.fi/en/about-us/careers
-    enabled: true
-    focus: food science, comparative genomics, microbiology, faculty of agriculture and forestry
-  - name: TFTAK (Center of Food and Fermentation Technologies)
-    priority: Tier 1
-    platform: career_page
-    url: https://www.tftak.eu/careers
-    enabled: true
-    focus: food technology, fermentation, bio-engineering, applied microbiology
-
-  # ==========================================
-  # 2. 全球与北欧顶尖益生菌、微生态专精企业
-  # ==========================================
-  - name: BioGaia
-    priority: Tier 1
-    platform: career_page
-    url: https://www.biogaiagroup.com/about-biogaia/career
-    enabled: true
-    focus: probiotics, L. reuteri, clinical microbiology, gut health, EMEA research
-  - name: Tiny Health
-    priority: Tier 1
-    platform: ashby
-    enabled: true
-    board: tiny-health
-    focus: microbiome/metagenomics
-  - name: Seed Health
-    priority: Tier 1
-    platform: greenhouse
-    enabled: true
-    board: seed
-    focus: microbiome, probiotics formulation
-  - name: Pendulum Therapeutics
-    priority: Tier 1
-    platform: lever
-    enabled: true
-    board: pendulum
-    focus: microbiome/metagenomics, next-gen probiotics
-  - name: Vedanta Biosciences
-    priority: Tier 1
-    platform: greenhouse
-    enabled: true
-    board: vedantabiosciences
-    focus: microbiome therapeutics, bacterial consortia
-  - name: Microba Life Sciences
-    priority: Tier 1
-    platform: browser_career
-    url: https://microba.com/careers/
-    enabled: true
-    focus: metagenomics, microbiome diagnostics
-  - name: Locus Biosciences
-    priority: Tier 1
-    platform: recruitee
-    enabled: true
-    board: locusbiosciences
-    focus: microbiome, precision antibacterial, phage
-  - name: SNIPR Biome
-    priority: Tier 1
-    platform: browser_career
-    url: https://www.sniprbiome.com/careers-overview
-    enabled: true
-    focus: CRISPR antimicrobials, microbiome engineering
-  - name: Microbiotica
-    priority: Tier 1
-    platform: browser_career
-    url: https://microbiotica.com/
-    enabled: true
-    focus: microbiome therapeutics, metagenomics
-  - name: FitBiomics
-    priority: Tier 1
-    platform: browser_career
-    url: https://fitbiomics.com/
-    enabled: true
-    focus: microbiome, probiotics, sports translation
-  - name: Concerto Biosciences
-    priority: Tier 1
-    platform: career_page
-    url: https://www.concertobio.com/careers
-    enabled: true
-    focus: microbial communities, synthetic ecology
-
-  # ==========================================
-  # 3. 全球乳业、发酵食品与营养巨头
-  # ==========================================
-  - name: Valio
-    priority: Tier 1
-    platform: career_page
-    url: https://www.valio.com/careers/
-    enabled: true
-    focus: dairy, probiotics, lactic acid bacteria, fermentation R&D
-  - name: Arla Foods
-    priority: Tier 1
-    platform: workday
-    host: arla.wd3.myworkdayjobs.com
-    tenant: arla
-    board: Arla_Careers
-    enabled: true
-    focus: dairy products, milk processing, food fermentation, microbiology
-  - name: Novonesis (Novozymes)
-    priority: Tier 1
-    platform: workday
-    host: novonesis.wd3.myworkdayjobs.com
-    tenant: novonesis
-    board: Novonesis_Careers
-    enabled: true
-    focus: industrial enzymes, microorganisms, fermentation, food biotech
-  - name: Nestlé
-    priority: Tier 1
-    platform: workday
-    host: nestle.wd3.myworkdayjobs.com
-    tenant: nestle
-    board: Nestle_Careers
-    enabled: true
-    focus: food and beverage, nutrition, gut health, R&D
-  - name: Danone
-    priority: Tier 1
-    platform: career_page
-    url: https://careers.danone.com/en-global/home.html
-    enabled: true
-    focus: dairy, fermented beverages, yogurt, probiotics, microbiome science
-  - name: Kerry Group
-    priority: Tier 2
-    platform: workday
-    host: kerry.wd3.myworkdayjobs.com
-    tenant: kerry
-    board: Kerry_Careers
-    enabled: true
-    focus: taste and nutrition, food enzymes, probiotics, fermentation technology
-  - name: Heineken
-    priority: Tier 2
-    platform: workday
-    host: heineken.wd3.myworkdayjobs.com
-    tenant: heineken
-    board: Heineken_Careers
-    enabled: true
-    focus: brewing, yeast fermentation, bioprocess, beverage science
-  - name: Carlsberg Group
-    priority: Tier 2
-    platform: workday
-    host: carlsberg.wd3.myworkdayjobs.com
-    tenant: carlsberg
-    board: Carlsberg_Careers
-    enabled: true
-    focus: brewing science, yeast technology, fermentation, beverage
+- name: Natural Resources Institute Finland (Luke)
+  priority: Tier 1
+  platform: career_page
+  url: https://www.luke.fi/en/about-luke/career-in-luke
+  enabled: true
+  focus: food microbiology, natural resources, bio-based business, fermentation, dairy technology
+- name: VTT Technical Research Centre of Finland
+  priority: Tier 1
+  platform: career_page
+  url: https://www.vttresearch.com/en/about-us/careers
+  enabled: true
+  focus: industrial biotechnology, synthetic biology, fermentation, food science
+- name: University of Helsinki
+  priority: Tier 1
+  platform: career_page
+  url: https://www.helsinki.fi/en/about-us/careers
+  enabled: true
+  focus: food science, comparative genomics, microbiology, faculty of agriculture and forestry
+- name: TFTAK (Center of Food and Fermentation Technologies)
+  priority: Tier 1
+  platform: career_page
+  url: https://www.tftak.eu/careers
+  enabled: true
+  focus: food technology, fermentation, bio-engineering, applied microbiology
+- name: BioGaia
+  priority: Tier 1
+  platform: career_page
+  url: https://www.biogaiagroup.com/about-biogaia/career
+  enabled: true
+  focus: probiotics, L. reuteri, clinical microbiology, gut health, EMEA research
+- name: Tiny Health
+  priority: Tier 1
+  platform: ashby
+  enabled: true
+  board: tiny-health
+  focus: microbiome/metagenomics
+- name: Seed Health
+  priority: Tier 1
+  platform: greenhouse
+  enabled: true
+  board: seed
+  focus: microbiome, probiotics formulation
+- name: Pendulum Therapeutics
+  priority: Tier 1
+  platform: lever
+  enabled: true
+  board: pendulum
+  focus: microbiome/metagenomics, next-gen probiotics
+- name: Vedanta Biosciences
+  priority: Tier 1
+  platform: greenhouse
+  enabled: true
+  board: vedantabiosciences
+  focus: microbiome therapeutics, bacterial consortia
+- name: Microba Life Sciences
+  priority: Tier 1
+  platform: browser_career
+  url: https://microba.com/careers/
+  enabled: true
+  focus: metagenomics, microbiome diagnostics
+- name: Locus Biosciences
+  priority: Tier 1
+  platform: recruitee
+  enabled: true
+  board: locusbiosciences
+  focus: microbiome, precision antibacterial, phage
+- name: SNIPR Biome
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.sniprbiome.com/careers-overview
+  enabled: true
+  focus: CRISPR antimicrobials, microbiome engineering
+- name: Microbiotica
+  priority: Tier 1
+  platform: browser_career
+  url: https://microbiotica.com/
+  enabled: true
+  focus: microbiome therapeutics, metagenomics
+- name: FitBiomics
+  priority: Tier 1
+  platform: browser_career
+  url: https://fitbiomics.com/
+  enabled: true
+  focus: microbiome, probiotics, sports translation
+- name: Concerto Biosciences
+  priority: Tier 1
+  platform: career_page
+  url: https://www.concertobio.com/careers
+  enabled: true
+  focus: microbial communities, synthetic ecology
+- name: Valio
+  priority: Tier 1
+  platform: career_page
+  url: https://www.valio.com/careers/
+  enabled: true
+  focus: dairy, probiotics, lactic acid bacteria, fermentation R&D
+- name: Arla Foods
+  priority: Tier 1
+  platform: workday
+  host: arla.wd3.myworkdayjobs.com
+  tenant: arla
+  board: Arla_Careers
+  enabled: true
+  focus: dairy products, milk processing, food fermentation, microbiology
+- name: Novonesis (Novozymes)
+  priority: Tier 1
+  platform: workday
+  host: novonesis.wd3.myworkdayjobs.com
+  tenant: novonesis
+  board: Novonesis_Careers
+  enabled: true
+  focus: industrial enzymes, microorganisms, fermentation, food biotech
+- name: Nestlé
+  priority: Tier 1
+  platform: workday
+  host: nestle.wd3.myworkdayjobs.com
+  tenant: nestle
+  board: Nestle_Careers
+  enabled: true
+  focus: food and beverage, nutrition, gut health, R&D
+- name: Danone
+  priority: Tier 1
+  platform: career_page
+  url: https://careers.danone.com/en-global/home.html
+  enabled: true
+  focus: dairy, fermented beverages, yogurt, probiotics, microbiome science
+- name: Kerry Group
+  priority: Tier 1
+  platform: workday
+  host: kerry.wd3.myworkdayjobs.com
+  tenant: kerry
+  board: Kerry_Careers
+  enabled: true
+  focus: taste and nutrition, food enzymes, probiotics, fermentation technology
+- name: Heineken
+  priority: Tier 1
+  platform: workday
+  host: heineken.wd3.myworkdayjobs.com
+  tenant: heineken
+  board: Heineken_Careers
+  enabled: true
+  focus: brewing, yeast fermentation, bioprocess, beverage science
+- name: Carlsberg Group
+  priority: Tier 1
+  platform: workday
+  host: carlsberg.wd3.myworkdayjobs.com
+  tenant: carlsberg
+  board: Carlsberg_Careers
+  enabled: true
+  focus: brewing science, yeast technology, fermentation, beverage
 - name: Exact Sciences
   priority: Tier 1
   platform: workday
