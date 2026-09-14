@@ -1,7 +1,7 @@
 # PERSONALIZE THIS FILE BEFORE TRUSTING THE RANKINGS.
 # The collector/company infrastructure is reusable; this file is the user-specific layer.
 profile_name: "Microbiology & Genomics Postdoc/Junior Scientist"
-profile_status: "personalized_active"
+profile_status: "personalized_ready"
 
 # Helpful context for ChatGPT. These fields are descriptive; the scorer ignores them.
 target_summary: >-
