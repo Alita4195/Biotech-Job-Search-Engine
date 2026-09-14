@@ -9,8 +9,13 @@ def test_profile_loads():
     assert p["role_rules"] and p["domain_rules"]
 
 def test_core_role_beats_generic_data_science():
-    core=job("Senior Bioinformatics Scientist", "NGS sequencing Python pipelines statistics")
-    generic=job("Senior Data Scientist", "generic analytics dashboards Python")
+    # 你的核心高分岗位：微生物博后，包含益生菌、发酵和Python技能
+    core = job("Microbiology Postdoc", "probiotics fermentation comparative genomics python")
+    
+    # 边缘/普通岗位：普通数据科学家，缺乏你核心领域的关键词
+    generic = job("Data Scientist", "generic analytics dashboards Python")
+    
+    # 断言：核心微生物岗位的总分，必须大于普通数据科学岗位
     assert score_job(core).total > score_job(generic).total
 
 def test_non_us_gate():
