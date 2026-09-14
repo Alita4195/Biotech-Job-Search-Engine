@@ -5,15 +5,17 @@ profile_status: "personalized_ready"
 
 # Helpful context for ChatGPT. These fields are descriptive; the scorer ignores them.
 target_summary: >-
-  Doctoral researcher in Microbiology with dual expertise in computational biology (comparative genomics, Python/R) and wet-lab techniques (fermentation, GC-MS, cell assays). Targeting Postdoc or Junior Scientist roles in academia or biotech, specifically focused on probiotics, microbiome, fermentation, or bioinformatics.
+  Doctoral researcher in Microbiology with dual expertise in computational biology (comparative genomics, Python/R) and wet-lab techniques (precision fermentation, food or beverage development, GC-MS, HPLC). Targeting Postdoc or Junior Scientist roles in academia or biotech, specifically focused on synthetic biology,  probiotics, microbiome, fermentation, or bioinformatics.
 resume_strengths: 
   - "Comparative Genomics & Pan-genome analysis"
   - "Bioinformatics (Python, R, Linux)"
   - "Probiotics Evaluation & Fermentation"
-  - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, PCR)"
-target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher", "Bioinformatician"]
+  - "Functional beverage"
+  - "Food development"
+  - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, Western Blot, PCR, immunofluorescence)"
+target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher"]
 avoid_titles: ["Director", "Principal", "Head", "VP", "Manager", "Senior Scientist"]
-preferred_locations: ["Finland", "Europe", "Remote"]
+preferred_locations: ["Finland", "Europe", "Australia"]
 compensation_notes: "Standard Postdoc/Junior Scientist academic or industry bands"
 
 score_bands:
@@ -23,28 +25,42 @@ score_bands:
 
 # First matching rule wins. Patterns are regular expressions, case-insensitive.
 role_rules:
-  - name: core_microbiology_genomics
+  - name: probiotic skills
     score: 30
     patterns:
-      - "postdoc.*microbiolog"
-      - "scientist.*microbiolog"
+      - "postdoc.*microbiology"
+      - "scientist.*microbiology"
       - "comparative genomic"
       - "probiotic"
-      - "fermentation scientist"
-  - name: core_bioinformatics_computational
-    score: 27
-    patterns:
+      - "strain characterization"
       - "bioinformatic"
-      - "computational biolog"
-      - "computational genomic"
+      - "microbiome"
+      - "gut microbiota"
+      - "host interaction"
+  - name: food science skills
+    score: 30
+    patterns:
+      - "fermentation scientist"
+      - "food microbiology"
+      - "food development"
+      - "beer"
+      - "beverage development"
+  - name: want to do
+    score: 30
+    patterns:
+      - "precision fermentation"
+      - "synthetic biology"
+      - "gas fermentation"
+      - "sustainable solution"
+      - "microbial engineering"
   - name: generic_postdoc
-    score: 20
+    score: 30
     patterns:
       - "postdoctoral"
       - "postdoc"
       - "fellowship"
   - name: junior_scientist
-    score: 18
+    score: 30
     patterns:
       - "junior scientist"
       - "research scientist"
@@ -85,7 +101,7 @@ operating_model_rules:
   - {name: lab_management, weight: 2, patterns: ["lab management", "cell bank", "procurement"]}
 
 leadership_rules:
-  - {name: mentoring, weight: 3, patterns: ["mentor", "supervis", "guide.*students"]}
+  - {name: mentoring, weight: 3, patterns: ["mentor", "supervise", "guide.*students"]}
   - {name: project_management, weight: 3, patterns: ["project management", "coordinate"]}
 
 # Adjust these after reviewing your resume and career goals.
