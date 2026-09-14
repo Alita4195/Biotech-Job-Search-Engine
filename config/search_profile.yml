@@ -109,7 +109,7 @@ location:
   enabled: true
   allow_ambiguous: true
   allowed_patterns:
-- "europe|\\beu\\b"
+    - "europe|\\beu\\b"
     - "finland|helsinki|espoo|turku|tampere"
     - "sweden|stockholm|gothenburg|lund|uppsala"
     - "denmark|copenhagen|aarhus"
