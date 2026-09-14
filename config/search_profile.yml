@@ -15,7 +15,6 @@ resume_strengths:
   - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, Western Blot, PCR, immunofluorescence)"
 target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher"]
 avoid_titles: ["Director", "Principal", "Head", "VP", "Manager", "Senior Scientist"]
-preferred_locations: ["Finland", "Europe", "Australia"]
 compensation_notes: "Standard Postdoc/Junior Scientist academic or industry bands"
 
 score_bands:
@@ -33,7 +32,7 @@ role_rules:
       - "comparative genomic"
       - "probiotic"
       - "strain characterization"
-      - "bioinformatic"
+      - "bioinformatics"
       - "microbiome"
       - "gut microbiota"
       - "host interaction"
@@ -45,14 +44,19 @@ role_rules:
       - "food development"
       - "beer"
       - "beverage development"
+      - "food biotech" 
   - name: want to do
     score: 30
     patterns:
       - "precision fermentation"
+      - "alternative protein"
+      - "sustainable biomanufacturing"
+      - "bioreactor"
       - "synthetic biology"
       - "gas fermentation"
       - "sustainable solution"
       - "microbial engineering"
+      - "metabolic engineering"
   - name: generic_postdoc
     score: 30
     patterns:
@@ -82,26 +86,26 @@ domain_rules:
     weight: 9
     patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation"]
   - name: fermentation_brewing
-    weight: 8
+    weight: 10
     patterns: ["fermentation", "brewing", "bioprocess", "strain characterization", "yeast", "sour beer"]
   - name: molecular_biology
-    weight: 6
+    weight: 10
     patterns: ["mutagenesis", "pcr", "homologous recombination", "western blot", "qpcr", "cell culture"]
 
 technical_rules:
   - {name: programming, weight: 5, patterns: ["python", "\\br\\b", "linux", "bash"]}
-  - {name: analytical_chemistry, weight: 4, patterns: ["gc-ms", "hplc", "analytical chemistry", "chromatography"]}
-  - {name: in_vitro_assays, weight: 4, patterns: ["in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
-  - {name: data_science, weight: 3, patterns: ["data science", "data analysis", "statistical"]}
+  - {name: analytical_chemistry, weight: 5, patterns: ["gc-ms", "hplc", "analytical chemistry", "chromatography"]}
+  - {name: in_vitro_assays, weight: 5, patterns: ["in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
+  - {name: data_science, weight: 5, patterns: ["data science", "data analysis", "statistical"]}
 
 operating_model_rules:
   - {name: dry_wet_lab_combo, weight: 4, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental", "in vitro", "multidisciplinary"]}
-  - {name: industry_collaboration, weight: 3, patterns: ["pilot[- ]scale", "industry partner", "scale[- ]up", "brewery"]}
-  - {name: product_development, weight: 3, patterns: ["product formulation", "sensory", "commercializ", "flavor profile"]}
-  - {name: lab_management, weight: 2, patterns: ["lab management", "cell bank", "procurement"]}
+  - {name: industry_collaboration, weight: 4, patterns: ["pilot[- ]scale", "industry partner", "scale[- ]up", "brewery"]}
+  - {name: product_development, weight: 4, patterns: ["product formulation", "sensory", "commercializ", "flavor profile"]}
+  - {name: lab_management, weight: 3, patterns: ["lab management", "cell bank", "procurement"]}
 
 leadership_rules:
-  - {name: mentoring, weight: 3, patterns: ["mentor", "supervise", "guide.*students"]}
+  - {name: mentoring, weight: 2, patterns: ["mentor", "supervise", "guide.*students"]}
   - {name: project_management, weight: 3, patterns: ["project management", "coordinate"]}
 
 # Adjust these after reviewing your resume and career goals.
