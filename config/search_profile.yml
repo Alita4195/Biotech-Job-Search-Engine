@@ -1,17 +1,20 @@
 # PERSONALIZE THIS FILE BEFORE TRUSTING THE RANKINGS.
 # The collector/company infrastructure is reusable; this file is the user-specific layer.
-profile_name: "Starter computational biology profile"
-profile_status: "starter_needs_resume_personalization"
+profile_name: "Microbiology & Genomics Postdoc/Junior Scientist"
+profile_status: "personalized_active"
 
 # Helpful context for ChatGPT. These fields are descriptive; the scorer ignores them.
 target_summary: >-
-  Replace this with a 2-4 sentence description derived from your resume: target role families,
-  scientific domains, seniority, work model/location, and important exclusions.
-resume_strengths: []
-target_titles: []
-avoid_titles: []
-preferred_locations: []
-compensation_notes: ""
+  Doctoral researcher in Microbiology with dual expertise in computational biology (comparative genomics, Python/R) and wet-lab techniques (fermentation, GC-MS, cell assays). Targeting Postdoc or Junior Scientist roles in academia or biotech, specifically focused on probiotics, microbiome, fermentation, or bioinformatics.
+resume_strengths: 
+  - "Comparative Genomics & Pan-genome analysis"
+  - "Bioinformatics (Python, R, Linux)"
+  - "Probiotics Evaluation & Fermentation"
+  - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, PCR)"
+target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher", "Bioinformatician"]
+avoid_titles: ["Director", "Principal", "Head", "VP", "Manager", "Senior Scientist"]
+preferred_locations: ["Finland", "Europe", "Remote"]
+compensation_notes: "Standard Postdoc/Junior Scientist academic or industry bands"
 
 score_bands:
   exceptional: 85
@@ -20,34 +23,32 @@ score_bands:
 
 # First matching rule wins. Patterns are regular expressions, case-insensitive.
 role_rules:
-  - name: core_bioinformatics_computational_biology
+  - name: core_microbiology_genomics
     score: 30
+    patterns:
+      - "postdoc.*microbiolog"
+      - "scientist.*microbiolog"
+      - "comparative genomic"
+      - "probiotic"
+      - "fermentation scientist"
+  - name: core_bioinformatics_computational
+    score: 27
     patterns:
       - "bioinformatic"
       - "computational biolog"
       - "computational genomic"
-  - name: applications_bioinformatics
-    score: 27
-    patterns:
-      - "applications?.*(bioinformatic|computational|genomic|sequenc)"
-      - "field applications?.*(bioinformatic|computational|genomic|sequenc)"
-  - name: adjacent_computational_science
+  - name: generic_postdoc
     score: 20
     patterns:
-      - "computational scientist"
-      - "informatics scientist"
-      - "statistical genetic"
-  - name: domain_data_science
+      - "postdoctoral"
+      - "postdoc"
+      - "fellowship"
+  - name: junior_scientist
     score: 18
     patterns:
-      - "genomic.*data scientist"
-      - "microbiome.*data scientist"
-      - "omics.*data scientist"
-  - name: generic_data_science
-    score: 10
-    patterns:
-      - "data scientist"
-      - "data science"
+      - "junior scientist"
+      - "research scientist"
+      - "researcher"
   - name: fallback_scientist
     score: 5
     patterns:
@@ -58,70 +59,74 @@ role_rules:
 
 # Additive categories, capped by the scorer. Customize weights to reflect your actual strengths.
 domain_rules:
-  - name: sequencing_genomics
+  - name: probiotics_microbiome
     weight: 10
-    patterns: ["\\bngs\\b", "sequenc", "genom", "whole[- ]genome", "\\bwgs\\b"]
-  - name: microbiome_metagenomics
+    patterns: ["probiotic", "microbiome", "lactic acid bacteria", "lactobacillus", "lacticaseibacillus", "gut health"]
+  - name: genomics_bioinformatics
+    weight: 9
+    patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation"]
+  - name: fermentation_brewing
     weight: 8
-    patterns: ["metagenom", "microbiome", "microbial genom", "16s"]
-  - name: oncology_ctdna
-    weight: 7
-    patterns: ["oncolog", "ctdna", "cfdna", "\\bmrd\\b", "liquid biopsy", "cancer"]
-  - name: methylation_epigenomics
-    weight: 7
-    patterns: ["methyl", "5hmc", "epigen"]
-  - name: transcriptomics_multiomics
-    weight: 5
-    patterns: ["rna[- ]seq", "transcriptom", "multi[- ]omic", "multiomic"]
+    patterns: ["fermentation", "brewing", "bioprocess", "strain characterization", "yeast", "sour beer"]
+  - name: molecular_biology
+    weight: 6
+    patterns: ["mutagenesis", "pcr", "homologous recombination", "western blot", "qpcr", "cell culture"]
 
 technical_rules:
-  - {name: programming, weight: 4, patterns: ["python", "\\br\\b"]}
-  - {name: pipelines_workflows, weight: 4, patterns: ["pipeline", "workflow", "nextflow", "snakemake"]}
-  - {name: statistics_ml, weight: 4, patterns: ["statistical", "machine learning", "classification", "estimat", "biostatistic"]}
-  - {name: compute, weight: 3, patterns: ["hpc", "slurm", "cloud", "distributed", "linux"]}
-  - {name: sequencing_formats, weight: 3, patterns: ["bam", "vcf", "alignment", "\\bngs\\b", "sequenc"]}
-  - {name: reproducibility, weight: 2, patterns: ["git", "reproduc", "productioniz", "open-source"]}
+  - {name: programming, weight: 5, patterns: ["python", "\\br\\b", "linux", "bash"]}
+  - {name: analytical_chemistry, weight: 4, patterns: ["gc-ms", "hplc", "analytical chemistry", "chromatography"]}
+  - {name: in_vitro_assays, weight: 4, patterns: ["in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
+  - {name: data_science, weight: 3, patterns: ["data science", "data analysis", "statistical"]}
 
 operating_model_rules:
-  - {name: cross_functional, weight: 3, patterns: ["cross[- ]functional", "multidisciplinary", "stakeholder"]}
-  - {name: wet_lab_collaboration, weight: 3, patterns: ["wet[- ]lab", "lab scientist", "experimental scientist", "assay team"]}
-  - {name: method_development, weight: 3, patterns: ["method develop", "evaluate.*method", "develop.*pipeline", "develop.*workflow"]}
-  - {name: product_validation, weight: 3, patterns: ["validation", "commercializ", "product develop", "productioniz", "launch", "release"]}
-  - {name: communication, weight: 3, patterns: ["present", "publication", "webinar", "best practice", "customer", "communicat"]}
+  - {name: dry_wet_lab_combo, weight: 4, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental", "in vitro", "multidisciplinary"]}
+  - {name: industry_collaboration, weight: 3, patterns: ["pilot[- ]scale", "industry partner", "scale[- ]up", "brewery"]}
+  - {name: product_development, weight: 3, patterns: ["product formulation", "sensory", "commercializ", "flavor profile"]}
+  - {name: lab_management, weight: 2, patterns: ["lab management", "cell bank", "procurement"]}
 
 leadership_rules:
-  - {name: technical_leadership, weight: 4, patterns: ["technical lead", "lead efforts", "subject matter expert", "analytical strategy"]}
-  - {name: people_leadership, weight: 3, patterns: ["mentor", "supervis", "manage a team", "direct report", "people manager"]}
-  - {name: project_leadership, weight: 2, patterns: ["project lead", "project leadership", "prioritiz", "delegate"]}
-  - {name: cross_functional, weight: 1, patterns: ["cross[- ]functional", "stakeholder"]}
+  - {name: mentoring, weight: 3, patterns: ["mentor", "supervis", "guide.*students"]}
+  - {name: project_management, weight: 3, patterns: ["project management", "coordinate"]}
 
 # Adjust these after reviewing your resume and career goals.
 seniority_rules:
   - {name: executive, adjustment: -50, patterns: ["vice president", "\\bvp\\b", "executive director", "chief ", "head of"]}
-  - {name: director, adjustment: -20, patterns: ["associate director", "\\bdirector\\b"]}
-  - {name: junior, adjustment: -18, patterns: ["junior", "entry[- ]level"]}
+  - {name: director, adjustment: -30, patterns: ["associate director", "\\bdirector\\b"]}
+  - {name: senior, adjustment: -15, patterns: ["senior scientist", "principal scientist", "staff scientist"]}
 
 penalty_rules:
-  - name: generic_data_science
-    adjustment: -8
-    title_patterns: ["data scientist", "data science"]
-    unless_title_patterns: ["bioinformatic", "genom", "microbiome", "metagenom", "computational biolog"]
   - name: engineering_mismatch
     adjustment: -20
-    title_patterns: ["software engineer", "data engineer", "devops", "site reliability", "computer vision", "computational chemistry", "cheminformatic"]
+    title_patterns: ["software engineer", "data engineer", "devops", "site reliability", "computer vision"]
+  - name: clinical_medical
+    adjustment: -15
+    title_patterns: ["medical doctor", "physician", "clinical trial manager", "regulatory affairs"]
 
 # Interaction bonuses are optional. Use them only after calibration demonstrates a distinctive niche.
 interaction_rules: []
-
 location:
   # Set enabled=false if you do not want geographic gating.
   enabled: true
   allow_ambiguous: true
   allowed_patterns:
-    - "united states"
-    - "u\\.?s\\.?"
-    - "us[- ]remote"
-    - "remote[- /]us"
+- "europe|\\beu\\b"
+    - "finland|helsinki|espoo|turku|tampere"
+    - "sweden|stockholm|gothenburg|lund|uppsala"
+    - "denmark|copenhagen|aarhus"
+    - "norway|oslo"
+    - "germany|berlin|munich|münchen|heidelberg|frankfurt"
+    - "switzerland|basel|zurich|lausanne|geneva"
+    - "netherlands|amsterdam|leiden|utrecht"
+    - "belgium|brussels|ghent|leuven"
+    - "france|paris|lyon|strasbourg"
+    - "united kingdom|\\buk\\b|london|cambridge|oxford"
+    - "ireland|dublin"
+    - "austria|vienna"
+    - "spain|barcelona|madrid"
+    - "italy|milan"
+    - "australia|sydney|melbourne|brisbane|perth|adelaide"
+    - "new zealand|auckland|wellington|christchurch"
+    - "united states|\\bu\\.?s\\.?\\b|usa|boston|san francisco|san diego|new york|seattle"
   excluded_patterns:
     - "india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai"
     - "united kingdom|\\buk\\b|london|cambridge,? england|oxford,? england"
