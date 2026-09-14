@@ -1,4 +1,16 @@
 companies:
+- name: Deepcell
+  priority: Tier 2
+  focus: AI cell biology; computational biology
+  platform: browser_career
+  enabled: false
+  diagnostic: false
+  url: https://www.deepcell.com/about/
+  follow_entry_links: true
+  render_wait_ms: 5500
+  log_external_links: true
+  browser_pagination: true
+  max_browser_pages: 3
 - name: Natural Resources Institute Finland (Luke)
   priority: Tier 1
   platform: career_page
