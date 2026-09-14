@@ -1,63 +1,165 @@
 companies:
-- name: Element Biosciences
-  priority: Tier 1
-  platform: greenhouse
-  board: elementbiosciences
-  enabled: true
-  diagnostic: false
-- name: Natera
-  priority: Tier 1
-  platform: greenhouse
-  board: natera
-  enabled: true
-  diagnostic: false
-- name: GRAIL
-  priority: Tier 1
-  platform: lever
-  board: grailbio
-  enabled: true
-  diagnostic: false
-- name: Foundation Medicine
-  priority: Tier 1
-  platform: foundation
-  url: https://careers.foundationmedicine.com/jobs/search
-  enabled: true
-  diagnostic: false
-- name: 10x Genomics
-  priority: Tier 1
-  platform: kula
-  board: 10xgenomics
-  url: https://careers.kula.ai/10xgenomics
-  enabled: true
-  diagnostic: false
-- name: Twist Bioscience
-  priority: Tier 1
-  platform: greenhouse
-  board: twistbioscience
-  enabled: true
-  diagnostic: false
-- name: Illumina
-  priority: Tier 1
-  platform: workday
-  host: illumina.wd1.myworkdayjobs.com
-  tenant: illumina
-  board: illumina-careers
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  max_detail_requests: 40
-  diagnostic: false
-- name: Guardant Health
-  priority: Tier 1
-  platform: workday
-  host: gh.wd1.myworkdayjobs.com
-  tenant: gh
-  board: gh
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  max_detail_requests: 40
-  diagnostic: false
+  # ==========================================
+  # 1. 芬兰本土与北欧核心食品、微生物科研机构
+  # ==========================================
+  - name: Natural Resources Institute Finland (Luke)
+    priority: Tier 1
+    platform: career_page
+    url: https://www.luke.fi/en/about-luke/career-in-luke
+    enabled: true
+    focus: food microbiology, natural resources, bio-based business, fermentation, dairy technology
+  - name: VTT Technical Research Centre of Finland
+    priority: Tier 1
+    platform: career_page
+    url: https://www.vttresearch.com/en/about-us/careers
+    enabled: true
+    focus: industrial biotechnology, synthetic biology, fermentation, food science
+  - name: University of Helsinki
+    priority: Tier 1
+    platform: career_page
+    url: https://www.helsinki.fi/en/about-us/careers
+    enabled: true
+    focus: food science, comparative genomics, microbiology, faculty of agriculture and forestry
+  - name: TFTAK (Center of Food and Fermentation Technologies)
+    priority: Tier 1
+    platform: career_page
+    url: https://www.tftak.eu/careers
+    enabled: true
+    focus: food technology, fermentation, bio-engineering, applied microbiology
+
+  # ==========================================
+  # 2. 全球与北欧顶尖益生菌、微生态专精企业
+  # ==========================================
+  - name: BioGaia
+    priority: Tier 1
+    platform: career_page
+    url: https://www.biogaiagroup.com/about-biogaia/career
+    enabled: true
+    focus: probiotics, L. reuteri, clinical microbiology, gut health, EMEA research
+  - name: Tiny Health
+    priority: Tier 1
+    platform: ashby
+    enabled: true
+    board: tiny-health
+    focus: microbiome/metagenomics
+  - name: Seed Health
+    priority: Tier 1
+    platform: greenhouse
+    enabled: true
+    board: seed
+    focus: microbiome, probiotics formulation
+  - name: Pendulum Therapeutics
+    priority: Tier 1
+    platform: lever
+    enabled: true
+    board: pendulum
+    focus: microbiome/metagenomics, next-gen probiotics
+  - name: Vedanta Biosciences
+    priority: Tier 1
+    platform: greenhouse
+    enabled: true
+    board: vedantabiosciences
+    focus: microbiome therapeutics, bacterial consortia
+  - name: Microba Life Sciences
+    priority: Tier 1
+    platform: browser_career
+    url: https://microba.com/careers/
+    enabled: true
+    focus: metagenomics, microbiome diagnostics
+  - name: Locus Biosciences
+    priority: Tier 1
+    platform: recruitee
+    enabled: true
+    board: locusbiosciences
+    focus: microbiome, precision antibacterial, phage
+  - name: SNIPR Biome
+    priority: Tier 1
+    platform: browser_career
+    url: https://www.sniprbiome.com/careers-overview
+    enabled: true
+    focus: CRISPR antimicrobials, microbiome engineering
+  - name: Microbiotica
+    priority: Tier 1
+    platform: browser_career
+    url: https://microbiotica.com/
+    enabled: true
+    focus: microbiome therapeutics, metagenomics
+  - name: FitBiomics
+    priority: Tier 1
+    platform: browser_career
+    url: https://fitbiomics.com/
+    enabled: true
+    focus: microbiome, probiotics, sports translation
+  - name: Concerto Biosciences
+    priority: Tier 1
+    platform: career_page
+    url: https://www.concertobio.com/careers
+    enabled: true
+    focus: microbial communities, synthetic ecology
+
+  # ==========================================
+  # 3. 全球乳业、发酵食品与营养巨头
+  # ==========================================
+  - name: Valio
+    priority: Tier 1
+    platform: career_page
+    url: https://www.valio.com/careers/
+    enabled: true
+    focus: dairy, probiotics, lactic acid bacteria, fermentation R&D
+  - name: Arla Foods
+    priority: Tier 1
+    platform: workday
+    host: arla.wd3.myworkdayjobs.com
+    tenant: arla
+    board: Arla_Careers
+    enabled: true
+    focus: dairy products, milk processing, food fermentation, microbiology
+  - name: Novonesis (Novozymes)
+    priority: Tier 1
+    platform: workday
+    host: novonesis.wd3.myworkdayjobs.com
+    tenant: novonesis
+    board: Novonesis_Careers
+    enabled: true
+    focus: industrial enzymes, microorganisms, fermentation, food biotech
+  - name: Nestlé
+    priority: Tier 1
+    platform: workday
+    host: nestle.wd3.myworkdayjobs.com
+    tenant: nestle
+    board: Nestle_Careers
+    enabled: true
+    focus: food and beverage, nutrition, gut health, R&D
+  - name: Danone
+    priority: Tier 1
+    platform: career_page
+    url: https://careers.danone.com/en-global/home.html
+    enabled: true
+    focus: dairy, fermented beverages, yogurt, probiotics, microbiome science
+  - name: Kerry Group
+    priority: Tier 2
+    platform: workday
+    host: kerry.wd3.myworkdayjobs.com
+    tenant: kerry
+    board: Kerry_Careers
+    enabled: true
+    focus: taste and nutrition, food enzymes, probiotics, fermentation technology
+  - name: Heineken
+    priority: Tier 2
+    platform: workday
+    host: heineken.wd3.myworkdayjobs.com
+    tenant: heineken
+    board: Heineken_Careers
+    enabled: true
+    focus: brewing, yeast fermentation, bioprocess, beverage science
+  - name: Carlsberg Group
+    priority: Tier 2
+    platform: workday
+    host: carlsberg.wd3.myworkdayjobs.com
+    tenant: carlsberg
+    board: Carlsberg_Careers
+    enabled: true
+    focus: brewing science, yeast technology, fermentation, beverage
 - name: Exact Sciences
   priority: Tier 1
   platform: workday
@@ -115,46 +217,6 @@ companies:
   public_seed_fallback: true
   public_seed_max_pages: 25
   diagnostic: false
-- name: PacBio
-  priority: Tier 1
-  platform: workday
-  host: pacbio.wd12.myworkdayjobs.com
-  tenant: PacBio
-  board: PacBio-
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  max_detail_requests: 40
-  workday_fallbacks:
-  - tenant: pacbio
-    board: PacBio-
-  - tenant: PacBio
-    board: PacBio
-  - tenant: pacbio
-    board: PacBio
-  diagnostic: false
-- name: Adaptive Biotechnologies
-  priority: Tier 1
-  platform: adaptive
-  enabled: true
-  note: Optional Playwright browser rendering; enable after installing browser extra.
-  url: https://www.adaptivebiotech.com/career-listings/listing/
-  diagnostic: false
-- name: Amgen
-  priority: Tier 2
-  platform: workday
-  host: amgen.wd1.myworkdayjobs.com
-  tenant: amgen
-  board: Careers
-  board_request_timeout: 22
-  board_retries: 2
-  max_detail_requests: 25
-  workday_seed_urls:
-  - https://amgen.wd1.myworkdayjobs.com/en-US/Careers/job/Principal-Scientist---Computational-Biology---Translational-AI--Oncology-Precision-Medicine-_R-237397
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  diagnostic: false
 - name: Novartis
   priority: Tier 2
   platform: workday
@@ -166,34 +228,12 @@ companies:
   max_pages: 200
   max_detail_requests: 40
   diagnostic: false
-- name: Genentech / Roche
+- name: Roche
   priority: Tier 2
   platform: workday
   host: roche.wd3.myworkdayjobs.com
   tenant: roche
   board: ROG-A2O-GENE
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  max_detail_requests: 40
-  diagnostic: false
-- name: Gilead Sciences
-  priority: Tier 2
-  platform: workday
-  host: gilead.wd1.myworkdayjobs.com
-  tenant: gilead
-  board: gileadcareers
-  enabled: true
-  page_size: 20
-  max_pages: 200
-  max_detail_requests: 40
-  diagnostic: false
-- name: Bristol Myers Squibb
-  priority: Tier 2
-  platform: workday
-  host: bristolmyerssquibb.wd5.myworkdayjobs.com
-  tenant: bristolmyerssquibb
-  board: BMS
   enabled: true
   page_size: 20
   max_pages: 200
@@ -1173,16 +1213,6 @@ companies:
   diagnostic: false
   zero_result_verified: true
   note: Official careers page currently states there are no open positions.
-- name: MaaT Pharma
-  priority: Tier 1
-  focus: microbiome therapeutics; microbiota
-  platform: career_page
-  url: https://www.maatpharma.com/job-offers/
-  enabled: true
-  diagnostic: false
-  heading_jobs: true
-  zero_result_verified: false
-  note: Dedicated Open Positions page currently lists roles.
 - name: Microba Life Sciences
   priority: Tier 1
   focus: metagenomics; microbiome diagnostics
@@ -1281,395 +1311,6 @@ companies:
   url: https://www.concertobio.com/careers
   enabled: true
   diagnostic: false
-- name: FitBiomics
-  priority: Tier 1
-  focus: microbiome; probiotics; metagenomics
-  platform: browser_career
-  url: https://fitbiomics.com/
-  enabled: true
-  diagnostic: false
-  follow_entry_links: true
-  render_wait_ms: 3000
-- name: Tessera Therapeutics
-  priority: Tier 1
-  focus: gene writing; computational biology
-  platform: greenhouse
-  board: tesseratherapeutics
-  enabled: true
-  diagnostic: false
-- name: Caribou Biosciences
-  priority: Tier 2
-  focus: CRISPR; cell therapy
-  platform: greenhouse
-  board: cariboubiosciencesinc
-  enabled: true
-  diagnostic: false
-- name: Scribe Therapeutics
-  priority: Tier 1
-  focus: CRISPR; genetic medicine
-  platform: career_page
-  board: scribetherapeutics
-  enabled: true
-  diagnostic: false
-  url: https://www.scribetx.com/careers
-  zero_result_verified: true
-  heading_jobs: true
-  note: Official careers page currently has an empty Openings section; continue monitoring
-    page.
-- name: Epicrispr Biotechnologies
-  priority: Tier 1
-  focus: CRISPR; epigenetic regulation; NGS
-  platform: greenhouse
-  board: epicbio
-  enabled: true
-  diagnostic: false
-- name: Mammoth Biosciences
-  priority: Tier 1
-  focus: CRISPR diagnostics; genetic medicine
-  platform: career_page
-  board: mammothbiosciences
-  enabled: true
-  url: https://mammoth.bio/careers/
-  heading_jobs: true
-  diagnostic: false
-  note: Official page server-renders current Career opportunities.
-- name: Verve Therapeutics
-  priority: Tier 2
-  focus: gene editing; genomics
-  platform: empty
-  board: vervetherapeutics
-  enabled: true
-  diagnostic: false
-  zero_result_verified: true
-  note: Independent recruiting retired after acquisition by Eli Lilly.
-- name: ArsenalBio
-  priority: Tier 2
-  focus: cell therapy; computational biology
-  platform: browser_career
-  board: arsenalbio
-  enabled: true
-  diagnostic: false
-  url: https://jobs.arsenalbio.com/
-  render_wait_ms: 4000
-- name: Lyell Immunopharma
-  priority: Tier 2
-  focus: cell therapy; oncology
-  platform: browser_career
-  board: lyell
-  enabled: true
-  diagnostic: false
-  url: https://www.lyell.com/careers/job-openings/
-  render_wait_ms: 4000
-- name: Allogene Therapeutics
-  priority: Tier 2
-  focus: cell therapy; genomics
-  platform: browser_career
-  board: allogene
-  enabled: true
-  diagnostic: false
-  url: https://allogene.com/careers/
-  render_wait_ms: 4000
-- name: CARGO Therapeutics
-  priority: Tier 2
-  focus: cell therapy; oncology
-  platform: empty
-  board: cargotherapeutics
-  enabled: true
-  diagnostic: false
-  zero_result_verified: true
-  note: Company ceased drug-development operations; no active recruiting board expected.
-- name: Century Therapeutics
-  priority: Tier 2
-  focus: cell therapy; computational biology
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://www.centurytx.com/join-us/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Nkarta
-  priority: Tier 2
-  focus: cell therapy; oncology
-  platform: greenhouse
-  board: nkarta
-  enabled: true
-  diagnostic: false
-- name: Fate Therapeutics
-  priority: Tier 2
-  focus: cell therapy; genomics
-  platform: lever
-  board: fatetherapeutics
-  enabled: true
-  diagnostic: false
-- name: Kyverna Therapeutics
-  priority: Tier 2
-  focus: cell therapy; autoimmune
-  platform: career_page
-  board: kyvernatx
-  enabled: true
-  url: https://kyvernatx.com/jobs-list/
-  heading_jobs: true
-  diagnostic: false
-- name: Umoja Biopharma
-  priority: Tier 2
-  focus: cell therapy; synthetic biology
-  platform: greenhouse
-  board: umojabiopharma
-  enabled: true
-  diagnostic: false
-- name: Capstan Therapeutics
-  priority: Tier 2
-  focus: in vivo cell engineering
-  platform: empty
-  enabled: true
-  diagnostic: false
-  zero_result_verified: true
-  note: Capstan Therapeutics is now part of AbbVie; no independent recruiting board
-    expected.
-- name: Cartesian Therapeutics
-  priority: Tier 2
-  focus: cell therapy; RNA
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://www.cartesiantherapeutics.com/careers/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Intellia Therapeutics
-  priority: Tier 1
-  focus: CRISPR; genomic innovation
-  platform: browser_career
-  url: https://www.intelliatx.com/careers/join-us/
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: CRISPR Therapeutics
-  priority: Tier 2
-  focus: CRISPR; cell therapy
-  platform: workday
-  enabled: true
-  diagnostic: false
-  browser_pagination: true
-  max_browser_pages: 3
-  host: crisprtx.wd12.myworkdayjobs.com
-  tenant: crisprtx
-  board: careers
-  workday_fallbacks:
-  - tenant: CRISPRTX
-    board: careers
-  - tenant: crisprtx
-    board: Careers
-  note: Verified live Workday board from current job-detail URLs.
-- name: Editas Medicine
-  priority: Tier 2
-  focus: CRISPR; genetic medicine
-  platform: browser_career
-  url: https://www.editasmedicine.com/careers/
-  enabled: true
-  diagnostic: false
-- name: eGenesis
-  priority: Tier 2
-  focus: gene editing; xenotransplantation
-  platform: browser_career
-  url: https://egenesisbio.com/careers
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Arbor Biotechnologies
-  priority: Tier 1
-  focus: CRISPR; computational discovery
-  platform: browser_career
-  url: https://arbor.bio/careers/
-  enabled: true
-  diagnostic: false
-- name: Rocket Pharmaceuticals
-  priority: Tier 2
-  focus: gene therapy; rare disease
-  platform: career_page
-  url: https://rocketpharma.com/join-us/careers/
-  enabled: true
-  diagnostic: false
-  zero_result_verified: true
-  heading_jobs: true
-  note: Official site currently states there are no job openings.
-- name: Ultragenyx
-  priority: Tier 2
-  focus: rare disease; gene therapy
-  platform: browser_career
-  url: https://www.ultragenyx.com/join-our-team/current-opportunities/
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Sarepta Therapeutics
-  priority: Tier 2
-  focus: genetic medicine; RNA; gene therapy
-  platform: browser_career
-  url: https://www.sarepta.com/join-us
-  enabled: true
-  diagnostic: false
-- name: Ionis Pharmaceuticals
-  priority: Tier 2
-  focus: RNA therapeutics; genomics
-  platform: ultipro
-  url: https://recruiting.ultipro.com/ISI1000ISIS/JobBoard/14a66400-68fa-4847-8593-af776328cfd2/?o=postedDateDesc&q=
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 5000
-  note: Verified official Ionis careers link to UKG/UltiPro job board.
-- name: Arrowhead Pharmaceuticals
-  priority: Tier 2
-  focus: RNAi; genomics
-  platform: browser_career
-  url: https://arrowheadpharma.com/careers/
-  enabled: true
-  diagnostic: false
-- name: Wave Life Sciences
-  priority: Tier 2
-  focus: RNA medicine; genomics
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://wavelifesciences.com/careers/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Dyne Therapeutics
-  priority: Tier 2
-  focus: RNA therapeutics; genetic disease
-  platform: greenhouse
-  board: dynetherapeutics
-  enabled: true
-  diagnostic: false
-- name: Entrada Therapeutics
-  priority: Tier 2
-  focus: intracellular therapeutics; RNA
-  platform: greenhouse
-  board: entradatherapeutics
-  enabled: true
-  diagnostic: false
-  request_timeout: 20
-- name: Avidity Biosciences
-  priority: Tier 2
-  focus: RNA therapeutics; rare disease
-  platform: jobvite
-  url: https://jobs.jobvite.com/aviditybiosciences/jobs
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4500
-  follow_entry_links: true
-  log_external_links: true
-  browser_pagination: true
-  max_browser_pages: 3
-  zero_result_verified: true
-- name: Arcturus Therapeutics
-  priority: Tier 2
-  focus: RNA medicines; infectious disease
-  platform: adp
-  url: https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?ccId=273966895617_8123&cid=13467e50-14e0-4ae3-b7af-fa2196c7c382&lang=en_US&type=JS
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 6500
-  follow_entry_links: true
-  log_external_links: true
-  browser_pagination: true
-  max_browser_pages: 3
-  adp_detect_empty: true
-  adp_parse_rendered_cards: true
-- name: Vir Biotechnology
-  priority: Tier 2
-  focus: infectious disease; computational biology
-  platform: browser_career
-  board: virbiotechnology
-  enabled: true
-  url: https://www.vir.bio/careers/
-  diagnostic: false
-- name: Denali Therapeutics
-  priority: Tier 2
-  focus: neurodegeneration; genetics
-  platform: browser_career
-  board: denalitherapeutics
-  enabled: true
-  url: https://www.denalitherapeutics.com/careers/
-  heading_jobs: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Neumora Therapeutics
-  priority: Tier 2
-  focus: precision neuroscience; data science
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://www.neumoratx.com/careers/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Biohaven
-  priority: Tier 3
-  focus: precision medicine; neuroscience
-  platform: browser_career
-  url: https://www.biohaven.com/careers
-  enabled: true
-  diagnostic: false
-- name: Alumis
-  priority: Tier 2
-  focus: precision immunology; computational biology
-  platform: greenhouse
-  board: alumis
-  enabled: true
-  diagnostic: false
-- name: Apogee Therapeutics
-  priority: Tier 3
-  focus: immunology; translational science
-  platform: greenhouse
-  enabled: true
-  diagnostic: false
-  board: apogeetherapeutics
-  note: Verified live Greenhouse board; replaces corporate-page scraping.
-  zero_result_verified: true
-- name: Revolution Medicines
-  priority: Tier 2
-  focus: precision oncology; genomics
-  platform: greenhouse
-  board: revolutionmedicines
-  enabled: true
-  diagnostic: false
-- name: Relay Therapeutics
-  priority: Tier 2
-  focus: computational drug discovery; oncology
-  platform: greenhouse
-  board: relaytherapeutics
-  enabled: true
-  diagnostic: false
-- name: Kura Oncology
-  priority: Tier 3
-  focus: precision oncology
-  platform: browser_career
-  url: https://www.kuraoncology.com/careers/
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Arcus Biosciences
-  priority: Tier 3
-  focus: oncology; biomarkers
-  platform: browser_career
-  board: arcusbiosciences
-  enabled: true
-  url: https://arcusbio.com/current-opportunities/
-  heading_jobs: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Iovance Biotherapeutics
-  priority: Tier 3
-  focus: cell therapy; oncology
-  platform: browser_career
-  url: https://www.iovance.com/careers/
-  enabled: true
-  diagnostic: false
-- name: ImmunityBio
-  priority: Tier 3
-  focus: immunotherapy; oncology
-  platform: browser_career
-  url: https://immunitybio.com/careers/
-  enabled: true
-  diagnostic: false
 - name: Janux Therapeutics
   priority: Tier 2
   focus: oncology; computational discovery
@@ -1687,97 +1328,6 @@ companies:
   enabled: true
   url: https://www.ideayabio.com/careers
   diagnostic: false
-- name: Nurix Therapeutics
-  priority: Tier 2
-  focus: targeted protein degradation; genomics
-  platform: browser_career
-  board: nurixtx
-  enabled: true
-  url: https://www.nurixtx.com/explore-jobs/
-  heading_jobs: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Kymera Therapeutics
-  priority: Tier 2
-  focus: targeted protein degradation
-  platform: browser_career
-  board: kymeratx
-  enabled: true
-  url: https://www.kymeratx.com/careers-culture/working-at-kymera/
-  heading_jobs: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: C4 Therapeutics
-  priority: Tier 3
-  focus: targeted protein degradation; oncology
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://c4therapeutics.com/careers/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Monte Rosa Therapeutics
-  priority: Tier 2
-  focus: molecular glue; genomics
-  platform: career_page
-  board: monterosatherapeutics
-  enabled: true
-  url: https://www.monterosatx.com/careers/
-  heading_jobs: true
-  diagnostic: false
-- name: Arvinas
-  priority: Tier 3
-  focus: targeted protein degradation
-  platform: browser_career
-  url: https://www.arvinas.com/careers/
-  enabled: true
-  diagnostic: false
-- name: BridgeBio
-  priority: Tier 2
-  focus: genetic disease; precision medicine
-  platform: greenhouse
-  board: bridgebio
-  enabled: true
-  diagnostic: false
-- name: AbCellera
-  priority: Tier 2
-  focus: antibody discovery; computational biology
-  platform: greenhouse
-  board: abcellera
-  enabled: true
-  diagnostic: false
-- name: Absci
-  priority: Tier 2
-  focus: AI drug discovery; protein design
-  platform: browser_career
-  board: absci
-  enabled: true
-  url: https://www.absci.com/career/
-  heading_jobs: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Deep Genomics
-  priority: Tier 1
-  focus: AI; RNA; genomics
-  platform: lever
-  board: deepgenomics
-  enabled: true
-  diagnostic: false
-- name: Owkin
-  priority: Tier 2
-  focus: AI; multimodal biology; oncology
-  platform: browser_career
-  board: owkin
-  enabled: true
-  url: https://www.owkin.com/careers
-  diagnostic: false
-- name: Flatiron Health
-  priority: Tier 2
-  focus: oncology data science; clinical data
-  platform: greenhouse
-  board: flatironhealth
-  enabled: true
-  diagnostic: false
 - name: Komodo Health
   priority: Tier 3
   focus: health data science; real-world data
@@ -1790,70 +1340,5 @@ companies:
   focus: clinical data; data science
   platform: greenhouse
   board: truveta
-  enabled: true
-  diagnostic: false
-- name: Nomic Bio
-  priority: Tier 2
-  focus: proteomics; computational biology
-  platform: ashby
-  board: nomic
-  enabled: true
-  diagnostic: false
-- name: Seer
-  priority: Tier 2
-  focus: proteomics; computational biology
-  platform: browser_career
-  enabled: true
-  diagnostic: false
-  url: https://seer.bio/careers/
-  follow_entry_links: true
-  render_wait_ms: 4000
-- name: Quanterix
-  priority: Tier 3
-  focus: biomarkers; diagnostics
-  platform: browser_career
-  url: https://www.quanterix.com/careers/
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Deepcell
-  priority: Tier 2
-  focus: AI cell biology; computational biology
-  platform: browser_career
-  enabled: false
-  diagnostic: false
-  url: https://www.deepcell.com/about/
-  follow_entry_links: true
-  render_wait_ms: 5500
-  log_external_links: true
-  browser_pagination: true
-  max_browser_pages: 3
-- name: Cytek Biosciences
-  priority: Tier 3
-  focus: single-cell; flow cytometry
-  platform: browser_career
-  url: https://cytekbio.com/careers/
-  enabled: true
-  diagnostic: false
-- name: Watchmaker Genomics
-  priority: Tier 1
-  focus: NGS; genomics tools
-  platform: greenhouse
-  board: watchmakergenomics
-  enabled: true
-  diagnostic: false
-- name: BioSkryb Genomics
-  priority: Tier 1
-  focus: single-cell genomics; NGS
-  platform: browser_career
-  url: https://bioskryb.com/careers/
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 4000
-- name: Resolve Biosciences
-  priority: Tier 2
-  focus: spatial transcriptomics; genomics
-  platform: browser_career
-  url: https://resolvebiosciences.com/careers/
   enabled: true
   diagnostic: false
