@@ -1955,28 +1955,33 @@ companies:
   focus: dairy, probiotics, lactic acid bacteria, fermentation R&D
 - name: Arla Foods
   priority: Tier 1
-  platform: workday
-  host: arla.wd3.myworkdayjobs.com
-  tenant: arla
-  board: Arla_Careers
+  platform: career_page
+  url: https://jobs.arla.com/gb/en/search-results
   enabled: true
   focus: dairy products, milk processing, food fermentation, microbiology
 - name: Novonesis (Novozymes)
   priority: Tier 1
   platform: workday
-  host: novonesis.wd3.myworkdayjobs.com
+  host: novonesis.wd103.myworkdayjobs.com
   tenant: novonesis
   board: Novonesis_Careers
   enabled: true
   focus: industrial enzymes, microorganisms, fermentation, food biotech
 - name: Nestlé
   priority: Tier 1
-  platform: workday
-  host: nestle.wd3.myworkdayjobs.com
-  tenant: nestle
-  board: Nestle_Careers
+  platform: successfactors
   enabled: true
+  url: https://www.nestle.com
   focus: food and beverage, nutrition, gut health, R&D
+  render_wait_ms: 4000
+  scroll_passes: 6
+  max_detail_requests: 30
+  note: SAP SuccessFactors public career-site collector for Nestlé HR tenant.
+  search_url: https://www.nestle.com/jobs/search-jobs
+  page_size: 25
+  max_pages: 12
+  zero_result_verified: false
+  diagnostic: false
 - name: Danone
   priority: Tier 1
   platform: career_page
