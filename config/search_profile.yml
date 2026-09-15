@@ -15,7 +15,6 @@ resume_strengths:
   - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, Western Blot, PCR, immunofluorescence)"
 target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher"]
 avoid_titles: ["Director", "Principal", "Head", "VP", "Manager", "Senior Scientist"]
-compensation_notes: "Standard Postdoc/Junior Scientist academic or industry bands"
 
 score_bands:
   exceptional: 85
