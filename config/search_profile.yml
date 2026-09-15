@@ -25,7 +25,7 @@ score_bands:
 # First matching rule wins. Patterns are regular expressions, case-insensitive.
 role_rules:
   - name: probiotic skills
-    score: 30
+    score: 50
     patterns:
       - "postdoc.*microbiology"
       - "scientist.*microbiology"
@@ -37,7 +37,7 @@ role_rules:
       - "gut microbiota"
       - "host interaction"
   - name: food science skills
-    score: 30
+    score: 50
     patterns:
       - "fermentation scientist"
       - "food microbiology"
@@ -46,7 +46,7 @@ role_rules:
       - "beverage development"
       - "food biotech" 
   - name: want to do
-    score: 30
+    score: 50
     patterns:
       - "precision fermentation"
       - "alternative protein"
@@ -64,7 +64,7 @@ role_rules:
       - "postdoc"
       - "fellowship"
   - name: junior_scientist
-    score: 30
+    score: 50
     patterns:
       - "junior scientist"
       - "research scientist"
@@ -83,22 +83,22 @@ role_rules:
 domain_rules:
   - name: probiotics_microbiome
     weight: 10
-    patterns: ["probiotic", "microbiome", "lactic acid bacteria", "lactobacillus", "lacticaseibacillus", "gut health"]
+    patterns: ["probiotic", "microbiome", "microbiota", "lactic acid bacteria", "lactobacillus", "lacticaseibacillus", "gut", "host"]
   - name: genomics_bioinformatics
-    weight: 9
-    patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation"]
-  - name: fermentation_brewing
     weight: 10
-    patterns: ["fermentation", "brewing", "bioprocess", "strain characterization", "yeast", "sour beer"]
+    patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation", "strain characterization"]
+  - name: fermentation
+    weight: 10
+    patterns: ["fermentation", "brewing", "bioprocess", "yeast", "beverage",".*beer", ]
   - name: molecular_biology
     weight: 10
     patterns: ["mutagenesis", "pcr", "homologous recombination", "western blot", "qpcr", "cell culture"]
 
 technical_rules:
-  - {name: programming, weight: 5, patterns: ["python", "\\br\\b", "linux", "bash"]}
-  - {name: analytical_chemistry, weight: 5, patterns: ["gc-ms", "hplc", "analytical chemistry", "chromatography"]}
-  - {name: in_vitro_assays, weight: 5, patterns: ["in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
-  - {name: data_science, weight: 5, patterns: ["data science", "data analysis", "statistical"]}
+  - {name: programming, weight: 10, patterns: ["python", "\\br\\b", "linux", "bash"]}
+  - {name: analytical_chemistry, weight: 10, patterns: ["gc[- ]?ms", "hplc", "analytical chemistry", "chromatography"]}
+  - {name: molecular_skills, weight: 10, patterns: ["mutagenesis", "pcr", "genomic engineering", "homologous recombination", "western blot", "qpcr", "cell culture", "in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
+  - {name: data_science, weight: 10, patterns: ["data science", "data analysis", "statistical"]}
 
 operating_model_rules:
   - {name: dry_wet_lab_combo, weight: 4, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental", "in vitro", "multidisciplinary"]}
