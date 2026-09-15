@@ -17,6 +17,6 @@ def test_food_biotech_scoring_version_on_export(tmp_path):
     Engine.export_csv([row], out, min_score=0)
     exported = next(csv.DictReader(out.open()))
     
-    # 验证：导出的 CSV 必须带有你的专属防伪标记，且再也没有杂七杂八的旧字段了
+    # 验证：导出的 CSV 必须带有你的专属防伪标记，且 location_fit 不会产生任何加分干扰 (默认为 0)
     assert exported["scoring_version"] == "food-biotech-v1"
-    assert "location_fit" not in exported  # 确认 location_fit 已经被物理蒸发
+    assert exported["location_fit"] == "0"
