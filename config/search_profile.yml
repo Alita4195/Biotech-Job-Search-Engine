@@ -24,57 +24,16 @@ score_bands:
 
 # First matching rule wins. Patterns are regular expressions, case-insensitive.
 role_rules:
-  - name: probiotic skills
+  - name: postdoc
     score: 50
     patterns:
-      - "postdoc.*microbiology"
-      - "scientist.*microbiology"
-      - "comparative genomic"
-      - "probiotic"
-      - "strain characterization"
-      - "bioinformatics"
-      - "microbiome"
-      - "gut microbiota"
-      - "host interaction"
-  - name: food science skills
+      - "postdoc.*"
+      - "fellow.*"
+  - name: scientist
     score: 50
     patterns:
-      - "fermentation scientist"
-      - "food microbiology"
-      - "food development"
-      - "beer"
-      - "beverage development"
-      - "food biotech" 
-  - name: want to do
-    score: 50
-    patterns:
-      - "precision fermentation"
-      - "alternative protein"
-      - "sustainable biomanufacturing"
-      - "bioreactor"
-      - "synthetic biology"
-      - "gas fermentation"
-      - "sustainable solution"
-      - "microbial engineering"
-      - "metabolic engineering"
-  - name: generic_postdoc
-    score: 30
-    patterns:
-      - "postdoctoral"
-      - "postdoc"
-      - "fellowship"
-  - name: junior_scientist
-    score: 50
-    patterns:
-      - "junior scientist"
-      - "research scientist"
-      - "research officer"
-      - "research *"
-      - "researcher"
-  - name: fallback_scientist
-    score: 5
-    patterns:
-      - "scientist"
+      - "research.*"
+      - "scientist.*"
   - name: default
     score: 2
     patterns: [".*"]
@@ -82,39 +41,39 @@ role_rules:
 # Additive categories, capped by the scorer. Customize weights to reflect your actual strengths.
 domain_rules:
   - name: probiotics_microbiome
-    weight: 10
+    weight: 20
     patterns: ["probiotic", "microbiome", "microbiota", "lactic acid bacteria", "lactobacillus", "lacticaseibacillus", "gut", "host"]
   - name: genomics_bioinformatics
-    weight: 10
+    weight: 20
     patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation", "strain characterization"]
-  - name: fermentation
-    weight: 10
-    patterns: ["fermentation", "brewing", "bioprocess", "yeast", "beverage",".*beer", ]
-  - name: molecular_biology
-    weight: 10
-    patterns: ["mutagenesis", "pcr", "homologous recombination", "western blot", "qpcr", "cell culture"]
+  - name: food_development
+    weight: 20
+    patterns: ["flavou?r", "sensory", "food biotech","starter culture","food micro.*", "fermentation", "brewing", "bioprocess", "yeast", "beverage"]
+  - name: synthetic_biology
+    weight: 25
+    patterns: ["carbon[- ]efficient", "synthetic biology", "metabolic engineering", "microbial engineering", "biomanufacturing", "bioreactor", "gas fermentation"]
 
 technical_rules:
   - {name: programming, weight: 10, patterns: ["python", "\\br\\b", "linux", "bash"]}
   - {name: analytical_chemistry, weight: 10, patterns: ["gc[- ]?ms", "hplc", "analytical chemistry", "chromatography"]}
-  - {name: molecular_skills, weight: 10, patterns: ["mutagenesis", "pcr", "genomic engineering", "homologous recombination", "western blot", "qpcr", "cell culture", "in vitro", "cell adhesion", "flow cytometry", "cck-8", "immunofluorescence"]}
-  - {name: data_science, weight: 10, patterns: ["data science", "data analysis", "statistical"]}
+  - {name: lab_skills, weight: 10, patterns: ["mutagenesis", "pcr", "genomic engineering", "homologous recombination", "western blot", ".*pcr", "cell culture", "in vitro", "cell adhesion", "flow cytometry", "immunofluorescence"]}
+  - {name: data_science, weight: 10, patterns: ["spss", "data science", "data analysis", "statistical"]}
 
 operating_model_rules:
-  - {name: dry_wet_lab_combo, weight: 4, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental", "in vitro", "multidisciplinary"]}
-  - {name: industry_collaboration, weight: 4, patterns: ["pilot[- ]scale", "industry partner", "scale[- ]up", "brewery"]}
-  - {name: product_development, weight: 4, patterns: ["product formulation", "sensory", "commercializ", "flavor profile"]}
-  - {name: lab_management, weight: 3, patterns: ["lab management", "cell bank", "procurement"]}
+  - {name: dry_wet_lab_combo, weight: 5, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental"]}
+  - {name: industry_collaboration, weight: 5, patterns: ["pilot", "industry partner", "scale[- ]up", "brewery"]}
+  - {name: product_development, weight: 5, patterns: ["formulation", "commercializ"]}
+  - {name: lab_management, weight: 5, patterns: ["lab management", "cell bank", "procurement"]}
 
 leadership_rules:
-  - {name: mentoring, weight: 2, patterns: ["mentor", "supervise", "guide.*students"]}
+  - {name: mentoring, weight: 3, patterns: ["mentor", "supervise", "guide.*students"]}
   - {name: project_management, weight: 3, patterns: ["project management", "coordinate"]}
 
 # Adjust these after reviewing your resume and career goals.
 seniority_rules:
   - {name: executive, adjustment: -50, patterns: ["vice president", "\\bvp\\b", "executive director", "chief ", "head of"]}
   - {name: director, adjustment: -30, patterns: ["associate director", "\\bdirector\\b"]}
-  - {name: senior, adjustment: -15, patterns: ["senior scientist", "principal scientist", "staff scientist"]}
+  - {name: senior, adjustment: -15, patterns: ["senior scientist", "principal scientist"]}
 
 penalty_rules:
   - name: engineering_mismatch
@@ -122,7 +81,7 @@ penalty_rules:
     title_patterns: ["software engineer", "data engineer", "devops", "site reliability", "computer vision"]
   - name: clinical_medical
     adjustment: -15
-    title_patterns: ["medical doctor", "physician", "clinical trial manager", "regulatory affairs"]
+    title_patterns: ["medical doctor", "physician", "clinical trial manager"]
 
 # Interaction bonuses are optional. Use them only after calibration demonstrates a distinctive niche.
 interaction_rules: []
