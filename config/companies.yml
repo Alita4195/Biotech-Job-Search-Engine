@@ -1948,7 +1948,7 @@ companies:
   scroll_passes: 6
   max_detail_requests: 30
   note: SAP SuccessFactors public career-site collector for Nestlé HR tenant.
-  search_url: https://www.nestle.com/jobs/search-jobs
+  search_url: https://nestle.jobs2web.com/job-search/search-jobs
   page_size: 25
   max_pages: 12
   zero_result_verified: false
