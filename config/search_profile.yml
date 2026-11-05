@@ -229,11 +229,11 @@ location:
   - chicago|los angeles|philadelphia|denver|austin|raleigh|durham
   - remote.*us|us.*remote
   - canada|toronto|vancouver|montreal|ottawa|calgary|edmonton|quebec
+  - singapore
+  - japan|tokyo|osaka|kyoto|yokohama
+  - south korea|korea|seoul|busan|incheon
   excluded_patterns:
   - india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai
   - israel|tel aviv|haifa
   - china|beijing|shanghai|shenzhen
-  - japan|tokyo|osaka
-  - south korea|seoul
-  - singapore
   - brazil|são paulo|rio de janeiro
