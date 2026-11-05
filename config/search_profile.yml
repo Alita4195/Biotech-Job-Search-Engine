@@ -46,7 +46,7 @@ role_rules:
   - .*
 domain_rules:
 - name: probiotics_microbiome
-  weight: 10
+  weight: 15
   patterns:
   - probiotic
   - microbiome
@@ -79,7 +79,7 @@ domain_rules:
   - yeast
   - beverage
 - name: synthetic_biology
-  weight: 15
+  weight: 10
   patterns:
   - carbon[- ]efficient
   - synthetic biology
