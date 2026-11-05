@@ -2018,16 +2018,14 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://solarfoods.com/careers/
+  url: https://solarfoods.recright.com/
   enabled: true
   diagnostic: false
-  heading_jobs: true
-  enrich_all: true
+  follow_entry_links: true
+  render_wait_ms: 4000
   max_detail_requests: 20
-  focus: Finland; microbial protein; gas fermentation; food biotechnology; bioprocess
-    scale-up
-  note: Official careers page links to Recright applications and also publishes openings
-    on-page.
+  focus: Finland; microbial protein; gas fermentation; food biotechnology; bioprocess scale-up
+  note: Solar Foods uses Recright ATS; direct Recright board URL used instead of careers page iframe.
 - name: Onego Bio
   target_profile: user1
   priority: Tier 1
