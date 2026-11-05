@@ -346,40 +346,12 @@ companies:
   zero_result_verified: true
   note: Greenhouse board currently empty; retained as verified-empty monitor.
   diagnostic: false
-- name: Tiny Health
-  priority: Tier 1
-  platform: ashby
-  enabled: true
-  board: tiny-health
-  focus: microbiome/metagenomics
-  diagnostic: false
 - name: Evvy
   priority: Tier 1
   platform: ashby
   enabled: true
   board: Evvy
   focus: microbiome/metagenomics
-  diagnostic: false
-- name: Seed Health
-  priority: Tier 1
-  platform: greenhouse
-  enabled: true
-  board: seed
-  focus: microbiome
-  diagnostic: false
-- name: Pendulum Therapeutics
-  priority: Tier 1
-  platform: lever
-  enabled: true
-  board: pendulum
-  focus: microbiome/metagenomics
-  diagnostic: false
-- name: Vedanta Biosciences
-  priority: Tier 1
-  platform: greenhouse
-  enabled: true
-  board: vedantabiosciences
-  focus: microbiome therapeutics
   diagnostic: false
 - name: Ferring Pharmaceuticals
   priority: Tier 1
@@ -415,13 +387,6 @@ companies:
   enabled: true
   board: kariusdx
   focus: metagenomic infectious disease diagnostics
-  diagnostic: false
-- name: Locus Biosciences
-  priority: Tier 1
-  platform: recruitee
-  enabled: true
-  board: locusbiosciences
-  focus: microbiome/precision antibacterial
   diagnostic: false
 - name: Metabiomics
   priority: Tier 1
@@ -1202,15 +1167,6 @@ companies:
   note: Dedicated Open Positions page currently lists roles.
   render_wait_ms: 3500
   follow_entry_links: true
-- name: Microba Life Sciences
-  priority: Tier 1
-  focus: metagenomics; microbiome diagnostics
-  platform: browser_career
-  url: https://microba.com/careers/
-  enabled: true
-  diagnostic: false
-  follow_entry_links: true
-  render_wait_ms: 3000
 - name: BiomeSense
   priority: Tier 1
   focus: microbiome; longitudinal metagenomics
@@ -1248,28 +1204,6 @@ companies:
   zero_result_verified: true
   note: Legacy biotech operations ceased; former BiomX Israel entered insolvency and
     phage programs ended.
-- name: SNIPR Biome
-  priority: Tier 1
-  focus: CRISPR antimicrobials; microbiome
-  platform: browser_career
-  url: https://www.sniprbiome.com/careers-overview
-  enabled: true
-  diagnostic: false
-  heading_jobs: true
-  zero_result_verified: false
-  seed_titles:
-  - Data Engineer
-  - Director of Preclinical Testing
-  note: Correct current careers route; official page plus active 2026 recruiting evidence.
-  follow_entry_links: true
-  render_wait_ms: 4500
-  log_external_links: true
-  browser_pagination: true
-  max_browser_pages: 3
-  entry_text_terms:
-  - open positions
-  - join our team
-  - linkedin
 - name: Eligo Bioscience
   priority: Tier 1
   focus: microbiome engineering; CRISPR
@@ -1284,33 +1218,6 @@ companies:
   max_browser_pages: 3
   zero_result_verified: false
   note: Dedicated parser for current Eligo headings and Breezy detail links.
-- name: Microbiotica
-  priority: Tier 1
-  focus: microbiome therapeutics; metagenomics
-  platform: browser_career
-  url: https://microbiotica.com/
-  enabled: true
-  diagnostic: false
-  follow_entry_links: true
-  render_wait_ms: 3000
-- name: Concerto Biosciences
-  priority: Tier 1
-  focus: microbial communities; synthetic ecology
-  platform: browser_career
-  url: https://www.concertobio.com/careers
-  enabled: true
-  diagnostic: false
-  render_wait_ms: 3500
-  follow_entry_links: true
-- name: FitBiomics
-  priority: Tier 1
-  focus: microbiome; probiotics; metagenomics
-  platform: browser_career
-  url: https://fitbiomics.com/
-  enabled: true
-  diagnostic: false
-  follow_entry_links: true
-  render_wait_ms: 3000
 - name: Tessera Therapeutics
   priority: Tier 1
   focus: gene writing; computational biology
@@ -2001,6 +1908,7 @@ companies:
   url: https://www.concertobio.com/careers
   enabled: true
   focus: microbial communities, synthetic ecology
+  zero_result_verified: true
 - name: Valio
   target_profile: user1
   priority: Tier 1
@@ -2059,31 +1967,43 @@ companies:
   max_pages: 100
   max_detail_requests: 30
 - name: Kerry Group
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
   host: kerry.wd3.myworkdayjobs.com
   tenant: kerry
   board: Kerry_Careers
+  enabled: true
+  focus: taste and nutrition, food enzymes, probiotics, fermentation technology
   workday_fallbacks:
   - tenant: kerryglobal
     board: Kerry_External_Careers
   - tenant: kerry
     board: Kerry_External
-  focus: taste and nutrition, food enzymes, probiotics, fermentation technology
 - name: Heineken
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
   host: heineken.wd3.myworkdayjobs.com
   tenant: heineken
   board: Heineken_Careers
+  enabled: true
+  focus: brewing, yeast fermentation, bioprocess, beverage science
   workday_fallbacks:
   - tenant: heineken
     board: Heineken_External_Careers
-    focus: brewing, yeast fermentation, bioprocess, beverage science
 - name: Carlsberg Group
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
   host: carlsberg.wd3.myworkdayjobs.com
   tenant: carlsberg
   board: Carlsberg_Careers
+  enabled: true
+  focus: brewing science, yeast technology, fermentation, beverage
   workday_fallbacks:
   - tenant: carlsberg
     board: Carlsberg_External
-    focus: brewing science, yeast technology, fermentation, beverage
 - name: Raisio
   target_profile: user1
   priority: Tier 1
