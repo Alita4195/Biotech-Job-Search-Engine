@@ -228,6 +228,7 @@ location:
     francisco
   - chicago|los angeles|philadelphia|denver|austin|raleigh|durham
   - remote.*us|us.*remote
+  - canada|toronto|vancouver|montreal|ottawa|calgary|edmonton|quebec
   excluded_patterns:
   - india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai
   - israel|tel aviv|haifa
@@ -236,4 +237,3 @@ location:
   - south korea|seoul
   - singapore
   - brazil|são paulo|rio de janeiro
-  - canada|toronto|vancouver|montreal
