@@ -2117,12 +2117,17 @@ companies:
 - name: Formo
   target_profile: user1
   priority: Tier 1
-  platform: empty
+  platform: browser_career
+  url: https://formo.bio/work/
   enabled: true
   diagnostic: false
+  heading_jobs: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 25
   zero_result_verified: true
   focus: Germany; precision fermentation; microbial engineering; animal-free dairy protein; food science
-  note: Formo only posts jobs on Glassdoor, no direct ATS or careers page available. Monitor manually at https://www.glassdoor.com/Jobs/Formo-Jobs-E123456.htm
+  note: No current openings; monitoring for future positions.
 - name: The Protein Brewery
   target_profile: user1
   priority: Tier 1
