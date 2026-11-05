@@ -1,112 +1,239 @@
-# PERSONALIZE THIS FILE BEFORE TRUSTING THE RANKINGS.
-# The collector/company infrastructure is reusable; this file is the user-specific layer.
-profile_name: "Microbiology & Genomics Postdoc/Junior Scientist"
-profile_status: "personalized_ready"
-
-# Helpful context for ChatGPT. These fields are descriptive; the scorer ignores them.
-target_summary: >-
-  Doctoral researcher in Microbiology with dual expertise in computational biology (comparative genomics, Python/R) and wet-lab techniques (precision fermentation, food or beverage development, GC-MS, HPLC). Targeting Postdoc or Junior Scientist roles in academia or biotech, specifically focused on synthetic biology,  probiotics, microbiome, fermentation, or bioinformatics.
-resume_strengths: 
-  - "Comparative Genomics & Pan-genome analysis"
-  - "Bioinformatics (Python, R, Linux)"
-  - "Probiotics Evaluation & Fermentation"
-  - "Functional beverage"
-  - "Food development"
-  - "Analytical & Molecular Lab Techniques (GC-MS, HPLC, Western Blot, PCR, immunofluorescence)"
-target_titles: ["Postdoc", "Postdoctoral", "Scientist", "Junior Scientist", "Researcher"]
-avoid_titles: ["Director", "Principal", "Head", "VP", "Manager", "Senior Scientist"]
-
+profile_name: Microbiology & Genomics Postdoc/Junior Scientist
+profile_status: personalized_ready
+target_summary: Doctoral researcher in Microbiology with dual expertise in computational
+  biology (comparative genomics, Python/R) and wet-lab techniques (precision fermentation,
+  food or beverage development, GC-MS, HPLC). Targeting Postdoc or Junior Scientist
+  roles in academia or biotech, specifically focused on synthetic biology,  probiotics,
+  microbiome, fermentation, or bioinformatics.
+resume_strengths:
+- Comparative Genomics & Pan-genome analysis
+- Bioinformatics (Python, R, Linux)
+- Probiotics Evaluation & Fermentation
+- Functional beverage
+- Food development
+- Analytical & Molecular Lab Techniques (GC-MS, HPLC, Western Blot, PCR, immunofluorescence)
+target_titles:
+- Postdoc
+- Postdoctoral
+- Scientist
+- Junior Scientist
+- Researcher
+avoid_titles:
+- Director
+- Principal
+- Head
+- VP
+- Manager
+- Senior Scientist
 score_bands:
   exceptional: 85
   strong: 75
   review: 65
-
-# First matching rule wins. Patterns are regular expressions, case-insensitive.
 role_rules:
-  - name: postdoc
-    score: 30
-    patterns:
-      - "postdoc.*"
-      - "fellow.*"
-  - name: scientist
-    score: 30
-    patterns:
-      - "research.*"
-      - "scientist.*"
-  - name: default
-    score: 2
-    patterns: [".*"]
-
-# Additive categories, capped by the scorer. Customize weights to reflect your actual strengths.
+- name: postdoc
+  score: 30
+  patterns:
+  - postdoc.*
+  - fellow.*
+- name: scientist
+  score: 30
+  patterns:
+  - research.*
+  - scientist.*
+- name: default
+  score: 2
+  patterns:
+  - .*
 domain_rules:
-  - name: probiotics_microbiome
-    weight: 10
-    patterns: ["probiotic", "microbiome", "microbiota", "lactic acid bacteria", "lactobacillus", "lacticaseibacillus", "gut", "host"]
-  - name: genomics_bioinformatics
-    weight: 10
-    patterns: ["genom", "pan-genome", "whole[- ]genome", "sequence analysis", "functional annotation", "strain characterization"]
-  - name: food_development
-    weight: 10
-    patterns: ["flavou?r", "sensory", "food biotech","starter culture","food micro.*", "fermentation", "brewing", "bioprocess", "yeast", "beverage"]
-  - name: synthetic_biology
-    weight: 15
-    patterns: ["carbon[- ]efficient", "synthetic biology", "metabolic engineering", "microbial engineering", "biomanufacturing", "bioreactor", "gas fermentation"]
-
+- name: probiotics_microbiome
+  weight: 10
+  patterns:
+  - probiotic
+  - microbiome
+  - microbiota
+  - lactic acid bacteria
+  - lactobacillus
+  - lacticaseibacillus
+  - gut
+  - host
+- name: genomics_bioinformatics
+  weight: 10
+  patterns:
+  - genom
+  - pan-genome
+  - whole[- ]genome
+  - sequence analysis
+  - functional annotation
+  - strain characterization
+- name: food_development
+  weight: 10
+  patterns:
+  - flavou?r
+  - sensory
+  - food biotech
+  - starter culture
+  - food micro.*
+  - fermentation
+  - brewing
+  - bioprocess
+  - yeast
+  - beverage
+- name: synthetic_biology
+  weight: 15
+  patterns:
+  - carbon[- ]efficient
+  - synthetic biology
+  - metabolic engineering
+  - microbial engineering
+  - biomanufacturing
+  - bioreactor
+  - gas fermentation
 technical_rules:
-  - {name: programming, weight: 5, patterns: ["python", "\\br\\b", "linux", "bash"]}
-  - {name: analytical_chemistry, weight: 5, patterns: ["gc[- ]?ms", "hplc", "analytical chemistry", "chromatography"]}
-  - {name: lab_skills, weight: 5, patterns: ["mutagenesis", "pcr", "genomic engineering", "homologous recombination", "western blot", ".*pcr", "cell culture", "in vitro", "cell adhesion", "flow cytometry", "immunofluorescence"]}
-  - {name: data_science, weight: 5, patterns: ["spss", "data science", "data analysis", "statisti"]}
-
+- name: programming
+  weight: 5
+  patterns:
+  - python
+  - \br\b
+  - linux
+  - bash
+- name: analytical_chemistry
+  weight: 5
+  patterns:
+  - gc[- ]?ms
+  - hplc
+  - analytical chemistry
+  - chromatography
+- name: lab_skills
+  weight: 5
+  patterns:
+  - mutagenesis
+  - pcr
+  - genomic engineering
+  - homologous recombination
+  - western blot
+  - .*pcr
+  - cell culture
+  - in vitro
+  - cell adhesion
+  - flow cytometry
+  - immunofluorescence
+- name: data_science
+  weight: 5
+  patterns:
+  - spss
+  - data science
+  - data analysis
+  - statisti
 operating_model_rules:
-  - {name: dry_wet_lab_combo, weight: 5, patterns: ["wet[- ]lab", "dry[- ]lab", "experimental"]}
-  - {name: industry_collaboration, weight: 5, patterns: ["pilot", "industry partner", "scale[- ]up", "brewery"]}
-  - {name: product_development, weight: 5, patterns: ["formulation", "commercializ"]}
-  - {name: lab_management, weight: 5, patterns: ["lab management", "cell bank", "procurement"]}
-
+- name: dry_wet_lab_combo
+  weight: 5
+  patterns:
+  - wet[- ]lab
+  - dry[- ]lab
+  - experimental
+- name: industry_collaboration
+  weight: 5
+  patterns:
+  - pilot
+  - industry partner
+  - scale[- ]up
+  - brewery
+- name: product_development
+  weight: 5
+  patterns:
+  - formulation
+  - commercializ
+- name: lab_management
+  weight: 5
+  patterns:
+  - lab management
+  - cell bank
+  - procurement
 leadership_rules:
-  - {name: mentoring, weight: 3, patterns: ["mentor", "supervise", "guide.*students"]}
-  - {name: project_management, weight: 3, patterns: ["project management", "coordinate"]}
-
-# Adjust these after reviewing your resume and career goals.
+- name: mentoring
+  weight: 3
+  patterns:
+  - mentor
+  - supervise
+  - guide.*students
+- name: project_management
+  weight: 3
+  patterns:
+  - project management
+  - coordinate
 seniority_rules:
-  - {name: executive, adjustment: -50, patterns: ["vice president", "\\bvp\\b", "executive director", "chief ", "head of"]}
-  - {name: director, adjustment: -30, patterns: ["associate director", "\\bdirector\\b"]}
-  - {name: senior, adjustment: -15, patterns: ["senior scientist", "principal scientist"]}
-
+- name: executive
+  adjustment: -50
+  patterns:
+  - vice president
+  - \bvp\b
+  - executive director
+  - 'chief '
+  - head of
+- name: director
+  adjustment: -30
+  patterns:
+  - associate director
+  - \bdirector\b
+- name: senior
+  adjustment: -15
+  patterns:
+  - senior scientist
+  - principal scientist
 penalty_rules:
-  - name: engineering_mismatch
-    adjustment: -20
-    title_patterns: ["software engineer", "data engineer", "devops", "site reliability", "computer vision"]
-  - name: clinical_medical
-    adjustment: -15
-    title_patterns: ["medical doctor", "physician", "clinical trial manager"]
-
-# Interaction bonuses are optional. Use them only after calibration demonstrates a distinctive niche.
+- name: engineering_mismatch
+  adjustment: -20
+  title_patterns:
+  - software engineer
+  - data engineer
+  - devops
+  - site reliability
+  - computer vision
+- name: clinical_medical
+  adjustment: -15
+  title_patterns:
+  - medical doctor
+  - physician
+  - clinical trial manager
 interaction_rules: []
 location:
-  # Set enabled=false if you do not want geographic gating.
   enabled: true
   allow_ambiguous: true
   allowed_patterns:
-    - "europe|\\beu\\b"
-    - "finland|helsinki|espoo|turku|tampere"
-    - "sweden|stockholm|gothenburg|lund|uppsala"
-    - "denmark|copenhagen|aarhus"
-    - "norway|oslo"
-    - "germany|berlin|munich|münchen|heidelberg|frankfurt"
-    - "switzerland|basel|zurich|lausanne|geneva"
-    - "netherlands|amsterdam|leiden|utrecht"
-    - "belgium|brussels|ghent|leuven"
-    - "france|paris|lyon|strasbourg"
-    - "united kingdom|\\buk\\b|london|cambridge|oxford"
-    - "ireland|dublin"
-    - "austria|vienna"
-    - "spain|barcelona|madrid"
-    - "italy|milan"
-    - "australia|sydney|melbourne|brisbane|perth|adelaide"
-    - "new zealand|auckland|wellington|christchurch"
-    - "united states|\\bu\\.?s\\.?\\b|usa|boston|san francisco|san diego|new york|seattle"
+  - finland|helsinki|espoo|turku|tampere|oulu
+  - sweden|stockholm|gothenburg|göteborg|lund|uppsala|malmö
+  - denmark|copenhagen|aarhus|odense
+  - norway|oslo|bergen|trondheim
+  - estonia|tallinn|tartu
+  - germany|berlin|munich|münchen|heidelberg|frankfurt|hamburg|cologne|köln|düsseldorf
+  - switzerland|basel|zurich|zürich|lausanne|geneva|genève
+  - netherlands|amsterdam|leiden|utrecht|eindhoven|delft
+  - belgium|brussels|ghent|leuven|antwerp
+  - france|paris|lyon|strasbourg|toulouse|bordeaux|marseille
+  - united kingdom|\buk\b|london|cambridge|oxford|edinburgh|manchester|bristol
+  - ireland|dublin|cork
+  - austria|vienna|wien|graz
+  - spain|barcelona|madrid|valencia|bilbao
+  - italy|milan|milano|rome|roma|bologna|turin|torino
+  - portugal|lisbon|lisboa|porto
+  - poland|warsaw|krakow|wroclaw
+  - czech republic|prague|brno
+  - hungary|budapest
+  - europe|\beu\b|emea
+  - remote.*europe|europe.*remote
+  - australia|sydney|melbourne|brisbane|perth|adelaide|canberra
+  - new zealand|auckland|wellington|christchurch|dunedin
+  - united states|\bu\.?s\.?\b|usa|\bUS\b
+  - boston|san francisco|san diego|new york|seattle|cambridge.*ma|la jolla|south san
+    francisco
+  - chicago|los angeles|philadelphia|denver|austin|raleigh|durham
+  - remote.*us|us.*remote
   excluded_patterns:
-    - "india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai"
-    - "israel|tel aviv|haifa"
+  - india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai
+  - israel|tel aviv|haifa
+  - china|beijing|shanghai|shenzhen
+  - japan|tokyo|osaka
+  - south korea|seoul
+  - singapore
+  - brazil|são paulo|rio de janeiro
+  - canada|toronto|vancouver|montreal
