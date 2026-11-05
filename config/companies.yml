@@ -1997,15 +1997,12 @@ companies:
 - name: Carlsberg Group
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: carlsberg.wd3.myworkdayjobs.com
-  tenant: carlsberg
-  board: Carlsberg_Careers
+  platform: icims
+  url: https://careers.carlsberg.com/jobs/search?
   enabled: true
+  max_pages: 20
   focus: brewing science, yeast technology, fermentation, beverage
-  workday_fallbacks:
-  - tenant: carlsberg
-    board: Carlsberg_External
+  note: Carlsberg uses iCIMS ATS at careers.carlsberg.com, not Workday.
 - name: Raisio
   target_profile: user1
   priority: Tier 1
