@@ -1967,17 +1967,14 @@ companies:
 - name: Kerry Group
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: kerry.wd3.myworkdayjobs.com
-  tenant: kerry
-  board: Kerry_Careers
+  platform: browser_career
+  url: https://jobs.kerry.com/search/jobs
   enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 30
   focus: taste and nutrition, food enzymes, probiotics, fermentation technology
-  workday_fallbacks:
-  - tenant: kerryglobal
-    board: Kerry_External_Careers
-  - tenant: kerry
-    board: Kerry_External
+  note: Kerry uses Phenom People ATS at jobs.kerry.com, not Workday.
 - name: Heineken
   target_profile: user1
   priority: Tier 1
