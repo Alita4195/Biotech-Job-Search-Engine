@@ -1982,12 +1982,16 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: workday
-  host: heineken.wd3.myworkdayjobs.com
-  tenant: heineken
+  host: theheinekencompany.wd3.myworkdayjobs.com
+  tenant: theheinekencompany
   board: Heineken_Careers
   enabled: true
   focus: brewing, yeast fermentation, bioprocess, beverage science
   workday_fallbacks:
+  - tenant: theheinekencompany
+    board: Heineken
+  - tenant: theheinekencompany
+    board: HEI_External
   - tenant: heineken
     board: Heineken_External_Careers
 - name: Carlsberg Group
