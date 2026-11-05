@@ -1940,14 +1940,15 @@ companies:
 - name: Nestlé
   target_profile: user1
   priority: Tier 1
-  platform: icims
-  url: https://jobdetails.nestle.com/jobs/search?
+  platform: browser_career
+  url: https://jobdetails.nestle.com/jobs/search
   enabled: true
-  max_pages: 20
   max_detail_requests: 30
   focus: food and beverage, nutrition, gut health, R&D
   note: Nestlé uses iCIMS ATS at jobdetails.nestle.com, not SuccessFactors.
   diagnostic: false
+  follow_entry_links: true
+  render_wait_ms: 4000
 - name: Danone
   target_profile: user1
   priority: Tier 1
@@ -1980,16 +1981,18 @@ companies:
   render_wait_ms: 4500
   max_detail_requests: 30
   focus: brewing, yeast fermentation, bioprocess, beverage science
-  note: Workday tenant unknown; using browser_career on official careers page pending ATS verification.
+  note: Workday tenant unknown; using browser_career on official careers page pending
+    ATS verification.
 - name: Carlsberg Group
   target_profile: user1
   priority: Tier 1
-  platform: icims
-  url: https://careers.carlsberg.com/jobs/search?
+  platform: browser_career
+  url: https://careers.carlsberg.com/jobs/search
   enabled: true
-  max_pages: 20
   focus: brewing science, yeast technology, fermentation, beverage
   note: Carlsberg uses iCIMS ATS at careers.carlsberg.com, not Workday.
+  follow_entry_links: true
+  render_wait_ms: 4000
 - name: Raisio
   target_profile: user1
   priority: Tier 1
@@ -2006,14 +2009,16 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://solarfoods.recright.com/
+  url: https://www.solarfoods.com/careers/
   enabled: true
   diagnostic: false
   follow_entry_links: true
-  render_wait_ms: 4000
+  render_wait_ms: 4500
   max_detail_requests: 20
-  focus: Finland; microbial protein; gas fermentation; food biotechnology; bioprocess scale-up
-  note: Solar Foods uses Recright ATS; direct Recright board URL used instead of careers page iframe.
+  focus: Finland; microbial protein; gas fermentation; food biotechnology; bioprocess
+    scale-up
+  note: Solar Foods uses Recright ATS; direct Recright board URL used instead of careers
+    page iframe.
 - name: Onego Bio
   target_profile: user1
   priority: Tier 1
@@ -2114,7 +2119,8 @@ companies:
   render_wait_ms: 4000
   max_detail_requests: 25
   zero_result_verified: true
-  focus: Germany; precision fermentation; microbial engineering; animal-free dairy protein; food science
+  focus: Germany; precision fermentation; microbial engineering; animal-free dairy
+    protein; food science
   note: No current openings; monitoring for future positions.
 - name: The Protein Brewery
   target_profile: user1
