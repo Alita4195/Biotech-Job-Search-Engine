@@ -1940,18 +1940,13 @@ companies:
 - name: Nestlé
   target_profile: user1
   priority: Tier 1
-  platform: successfactors
+  platform: icims
+  url: https://jobdetails.nestle.com/jobs/search?
   enabled: true
-  url: https://nestle.jobs2web.com/job-search/search-jobs
-  focus: food and beverage, nutrition, gut health, R&D
-  render_wait_ms: 4000
-  scroll_passes: 6
+  max_pages: 20
   max_detail_requests: 30
-  note: SAP SuccessFactors public career-site collector for Nestlé HR tenant.
-  search_url: https://nestle.jobs2web.com/job-search/search-jobs
-  page_size: 25
-  max_pages: 12
-  zero_result_verified: false
+  focus: food and beverage, nutrition, gut health, R&D
+  note: Nestlé uses iCIMS ATS at jobdetails.nestle.com, not SuccessFactors.
   diagnostic: false
 - name: Danone
   target_profile: user1
