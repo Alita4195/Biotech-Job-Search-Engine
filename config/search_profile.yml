@@ -220,18 +220,19 @@ location:
   - czech republic|prague|brno
   - hungary|budapest
   - europe|\beu\b|emea
-  - remote.*europe|europe.*remote
   - australia|sydney|melbourne|brisbane|perth|adelaide|canberra
   - new zealand|auckland|wellington|christchurch|dunedin
   - united states|\bu\.?s\.?\b|usa|\bUS\b
   - boston|san francisco|san diego|new york|seattle|cambridge.*ma|la jolla|south san
     francisco
   - chicago|los angeles|philadelphia|denver|austin|raleigh|durham
-  - remote.*us|us.*remote
   - canada|toronto|vancouver|montreal|ottawa|calgary|edmonton|quebec
   - singapore
   - japan|tokyo|osaka|kyoto|yokohama
   - south korea|korea|seoul|busan|incheon
+  - remote
+  - hybrid
+  - on-?site
   excluded_patterns:
   - india|hyderabad|bengaluru|bangalore|pune|mumbai|delhi|chennai
   - israel|tel aviv|haifa
