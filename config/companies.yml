@@ -1956,16 +1956,14 @@ companies:
 - name: Danone
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  url: https://careers.danone.com/en-global/home.html
-  host: danone.wd3.myworkdayjobs.com
-  tenant: danone
-  board: Danone_Careers
+  platform: browser_career
+  url: https://careers.danone.com/en-global/search/
   enabled: true
-  focus: dairy, fermented beverages, yogurt, probiotics, microbiome science
-  page_size: 20
-  max_pages: 100
+  follow_entry_links: true
+  render_wait_ms: 4000
   max_detail_requests: 30
+  focus: dairy, fermented beverages, yogurt, probiotics, microbiome science
+  note: Danone uses RoadTrip/Talentsoft ATS not Workday; browser collector required.
 - name: Kerry Group
   target_profile: user1
   priority: Tier 1
