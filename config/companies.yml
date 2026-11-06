@@ -2458,7 +2458,7 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  enabled: true
+  enabled: false
   max_detail_requests: 30
   focus: Ireland; dairy; nutrition; food science; fermentation; whey protein
   url: https://www.glanbia.com/careers/job-search
@@ -2466,6 +2466,7 @@ companies:
   render_wait_ms: 5000
   note: Login required for internal portal; trying public job search page instead.
   scroll_passes: 3
+  zero_result_verified: true
 - name: Ornua
   target_profile: user1
   priority: Tier 1
