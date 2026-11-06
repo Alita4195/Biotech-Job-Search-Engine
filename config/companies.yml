@@ -1816,7 +1816,8 @@ companies:
   platform: browser_career
   url: https://www.helsinki.fi/en/about-us/careers
   enabled: true
-  focus: food science, comparative genomics, microbiology, faculty of agriculture and forestry
+  focus: food science, comparative genomics, microbiology, faculty of agriculture
+    and forestry
   render_wait_ms: 4000
 - name: SETU (South East Technological University)
   target_profile: user1
@@ -1827,7 +1828,8 @@ companies:
   follow_entry_links: true
   render_wait_ms: 4000
   max_detail_requests: 20
-  focus: Ireland; food science; fermentation; microbiology; biotechnology; applied research
+  focus: Ireland; food science; fermentation; microbiology; biotechnology; applied
+    research
 - name: Teagasc
   target_profile: user1
   priority: Tier 1
@@ -1837,8 +1839,8 @@ companies:
   follow_entry_links: true
   render_wait_ms: 4000
   max_detail_requests: 20
-  focus: Ireland; food research; dairy; fermentation; gut microbiome; probiotics; agriculture; food science
-  follow_entry_links: true
+  focus: Ireland; food research; dairy; fermentation; gut microbiome; probiotics;
+    agriculture; food science
 - name: TFTAK (Center of Food and Fermentation Technologies)
   target_profile: user1
   priority: Tier 1
@@ -1989,7 +1991,8 @@ companies:
   render_wait_ms: 4500
   max_detail_requests: 30
   focus: taste and nutrition, food enzymes, probiotics, fermentation technology
-  note: Kerry uses Phenom People ATS at jobs.kerry.com; job URLs follow /gb/en/job/[id]/[slug] pattern.
+  note: Kerry uses Phenom People ATS at jobs.kerry.com; job URLs follow /gb/en/job/[id]/[slug]
+    pattern.
 - name: Heineken
   target_profile: user1
   priority: Tier 1
@@ -2237,3 +2240,347 @@ companies:
     industrial microbiology
   render_wait_ms: 4000
   follow_entry_links: true
+- name: APC Microbiome Ireland
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.ucc.ie/en/apc/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; gut microbiome; probiotics; fermentation; food science; clinical
+    microbiology
+- name: University College Cork
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.ucc.ie/en/hr/vacancies/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; food science; microbiology; fermentation; microbiome; dairy
+- name: University College Dublin
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.ucd.ie/hr/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; food science; microbiology; bioinformatics; agriculture
+- name: Wageningen University & Research
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.wur.nl/en/jobs.htm
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 30
+  focus: Netherlands; food science; fermentation; microbiology; plant science; bioinformatics
+- name: NIZO Food Research
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.nizo.com/about-nizo/vacancies/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Netherlands; dairy; fermentation; probiotics; food microbiology; ingredient
+    development
+- name: Technical University of Denmark
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.dtu.dk/english/about/job-and-career
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Denmark; fermentation engineering; food science; bioinformatics; brewing;
+    microbiology
+- name: Aarhus University
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.au.dk/en/about/organisation/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Denmark; food science; microbiology; dairy; fermentation; molecular biology
+- name: VIB
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.vib.be/en/jobs
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Belgium; yeast microbiology; microbial genomics; fermentation; biotechnology
+- name: KU Leuven
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.kuleuven.be/personeel/jobsite/en/jobs
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Belgium; beer research; yeast biology; fermentation; food science; microbiology
+- name: INRAE
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://jobs.inrae.fr/en
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: France; food science; fermentation; microbiology; gut microbiome; agriculture
+- name: Institut Pasteur
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://jobs.pasteur.fr/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: France; microbiology; genomics; infectious disease; probiotics; microbiome
+- name: Leibniz Institute of Food Systems Biology
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.leibniz-lsb.de/en/institute/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Germany; food science; sensory analysis; metabolomics; fermentation; food
+    systems biology
+- name: Max Rubner-Institut
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.mri.bund.de/en/institute/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Germany; food quality; fermentation; dairy; nutritional science; food microbiology
+- name: Chalmers University of Technology
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.chalmers.se/en/about-chalmers/work-with-us/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Sweden; fermentation; bioprocess; food science; bioinformatics; systems biology
+- name: Swedish University of Agricultural Sciences
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.slu.se/en/about-slu/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Sweden; food science; microbiology; fermentation; agriculture; gut microbiome
+- name: Chr. Hansen
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: chrhansen.wd3.myworkdayjobs.com
+  tenant: chrhansen
+  board: ChrHansen
+  enabled: true
+  max_detail_requests: 30
+  focus: Denmark; probiotics; cultures; enzymes; fermentation; dairy; food ingredients
+- name: DuPont Nutrition & Biosciences
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: dupont.wd1.myworkdayjobs.com
+  tenant: dupont
+  board: DuPont_External
+  enabled: true
+  max_detail_requests: 30
+  focus: Global; probiotics; food cultures; fermentation ingredients; enzyme technology
+- name: Arla Foods Ingredients
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.arlafoodsingredients.com/about-us/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Denmark; whey protein; dairy ingredients; fermentation; food science
+- name: Orkla
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.orkla.com/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Norway; food science; fermentation; consumer goods; product development
+- name: FrieslandCampina
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: frieslandcampina.wd3.myworkdayjobs.com
+  tenant: frieslandcampina
+  board: FrieslandCampina
+  enabled: true
+  max_detail_requests: 30
+  focus: Netherlands; dairy; probiotics; fermentation; food science; nutrition
+- name: Cosucra
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.cosucra.com/en/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Belgium; plant-based ingredients; fermentation; food science; pea protein
+- name: Beneo
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.beneo.com/about-beneo/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Belgium; prebiotic ingredients; chicory; food science; gut health; fermentation
+- name: Glanbia
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: glanbia.wd3.myworkdayjobs.com
+  tenant: glanbia
+  board: Glanbia
+  enabled: true
+  max_detail_requests: 30
+  focus: Ireland; dairy; nutrition; food science; fermentation; whey protein
+- name: Ornua
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.ornua.com/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; dairy; butter; cheese; food science; fermentation
+- name: Weihenstephan (TU Munich)
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.tum.de/en/about-tum/jobs-at-tum/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Germany; brewing science; fermentation; yeast biology; food technology; malting
+- name: VLB Berlin
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.vlb-berlin.org/en/about-vlb/career/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Germany; brewing; malting; fermentation; yeast research; beverage technology
+- name: Heriot-Watt University
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.hw.ac.uk/about/work-with-us.htm
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: UK; brewing; distilling; fermentation; food science; microbiology
+- name: University of Nottingham
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.nottingham.ac.uk/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: UK; yeast biology; fermentation; food science; microbiology; bioinformatics
+- name: Carlsberg Research Laboratory
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.carlsberggroup.com/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Denmark; yeast genomics; brewing research; fermentation; microbiology
+- name: AB InBev
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: abinbev.wd3.myworkdayjobs.com
+  tenant: abinbev
+  board: ABInBev
+  enabled: true
+  max_detail_requests: 30
+  focus: Global; brewing; yeast fermentation; bioprocess; beverage science; food microbiology
+- name: Molson Coors
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: molsoncoors.wd5.myworkdayjobs.com
+  tenant: molsoncoors
+  board: MolsonCoors
+  enabled: true
+  max_detail_requests: 30
+  focus: Global; brewing; fermentation; yeast; beverage science; food science
+- name: Diageo
+  target_profile: user1
+  priority: Tier 1
+  platform: workday
+  host: diageo.wd3.myworkdayjobs.com
+  tenant: diageo
+  board: Diageo
+  enabled: true
+  max_detail_requests: 30
+  focus: UK; brewing; distilling; fermentation; yeast; beverage science
+- name: Asahi Europe
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.asahieuropeandinternational.com/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Europe; brewing; fermentation; yeast; beverage science; food microbiology
+- name: Fermentis
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://fermentis.com/en/fermentis-company/careers/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: France; yeast; fermentation; brewing; winemaking; distilling; food fermentation
