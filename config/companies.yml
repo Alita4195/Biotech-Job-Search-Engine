@@ -2433,12 +2433,14 @@ companies:
 - name: FrieslandCampina
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: frieslandcampina.wd3.myworkdayjobs.com
-  tenant: frieslandcampina
-  board: FrieslandCampina
+  platform: browser_career
+  url: https://www.frieslandcampina.com/careers/vacancies/
   enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4500
   max_detail_requests: 30
+  focus: Netherlands; dairy; probiotics; fermentation; food science; nutrition
+  note: Workday tenant unverified; using browser_career pending ATS check.
   focus: Netherlands; dairy; probiotics; fermentation; food science; nutrition
 - name: Cosucra
   target_profile: user1
