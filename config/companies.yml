@@ -1846,12 +1846,11 @@ companies:
 - name: TFTAK (Center of Food and Fermentation Technologies)
   target_profile: user1
   priority: Tier 1
-  platform: browser_career
-  url: https://www.tftak.eu/careers
+  platform: empty
   enabled: true
+  zero_result_verified: true
   focus: food technology, fermentation, bio-engineering, applied microbiology
-  render_wait_ms: 3500
-  follow_entry_links: true
+  note: TFTAK posts job openings as PDF files on tftak.eu/careers — cannot be scraped automatically. Check manually at https://www.tftak.eu/careers
 - name: BioGaia
   target_profile: user1
   priority: Tier 1
