@@ -2494,12 +2494,12 @@ companies:
 - name: Heriot-Watt University
   target_profile: user1
   priority: Tier 1
-  platform: browser_career
-  url: https://www.hw.ac.uk/about/work-with-us.htm
+  platform: oracle
+  url: https://enzj.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs
   enabled: true
-  follow_entry_links: true
-  render_wait_ms: 4000
   max_detail_requests: 20
+  focus: UK; brewing; distilling; fermentation; food science; microbiology
+  note: Uses Oracle HCM Cloud at enzj.fa.em3.oraclecloud.com
   focus: UK; brewing; distilling; fermentation; food science; microbiology
 - name: University of Nottingham
   target_profile: user1
