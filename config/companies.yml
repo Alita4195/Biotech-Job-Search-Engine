@@ -2332,11 +2332,13 @@ companies:
   priority: Tier 1
   platform: browser_career
   url: https://www.kuleuven.be/personeel/jobsite/en/jobs
-  enabled: true
+  enabled: false
   follow_entry_links: true
   render_wait_ms: 4000
   max_detail_requests: 20
   focus: Belgium; beer research; yeast biology; fermentation; food science; microbiology
+  zero_result_verified: true
+  note: Job portal requires login (SAML SSO); cannot be scraped externally.
 - name: INRAE
   target_profile: user1
   priority: Tier 1
