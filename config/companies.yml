@@ -2445,22 +2445,22 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://www.beneo.com/about-beneo/careers/
+  url: https://www.beneo.com/careers/
   enabled: true
   follow_entry_links: true
-  render_wait_ms: 4000
+  render_wait_ms: 6000
   max_detail_requests: 20
   focus: Belgium; prebiotic ingredients; chicory; food science; gut health; fermentation
 - name: Glanbia
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: glanbia.wd3.myworkdayjobs.com
-  tenant: glanbia
-  board: Glanbia
+  platform: browser_career
   enabled: true
   max_detail_requests: 30
   focus: Ireland; dairy; nutrition; food science; fermentation; whey protein
+  url: https://www.glanbia.com/careers/job-search
+  follow_entry_links: true
+  render_wait_ms: 4500
 - name: Ornua
   target_profile: user1
   priority: Tier 1
@@ -2558,7 +2558,7 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://www.asahieuropeandinternational.com/en/careers/
+  url: https://www.asahi-europe.com/careers/
   enabled: true
   follow_entry_links: true
   render_wait_ms: 4500
