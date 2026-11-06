@@ -2394,16 +2394,6 @@ companies:
   render_wait_ms: 4000
   max_detail_requests: 20
   focus: Sweden; food science; microbiology; fermentation; agriculture; gut microbiome
-- name: Chr. Hansen
-  target_profile: user1
-  priority: Tier 1
-  platform: workday
-  host: chrhansen.wd3.myworkdayjobs.com
-  tenant: chrhansen
-  board: ChrHansen
-  enabled: true
-  max_detail_requests: 30
-  focus: Denmark; probiotics; cultures; enzymes; fermentation; dairy; food ingredients
 - name: DuPont Nutrition & Biosciences
   target_profile: user1
   priority: Tier 1
