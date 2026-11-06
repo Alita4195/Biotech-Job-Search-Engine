@@ -2538,43 +2538,47 @@ companies:
 - name: AB InBev
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: abinbev.wd3.myworkdayjobs.com
-  tenant: abinbev
-  board: ABInBev
+  platform: browser_career
   enabled: true
   max_detail_requests: 30
   focus: Global; brewing; yeast fermentation; bioprocess; beverage science; food microbiology
+  url: https://www.ab-inbev.com/careers/
+  follow_entry_links: true
+  render_wait_ms: 4500
+  note: Workday tenant unverified; using browser_career pending ATS check
 - name: Molson Coors
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: molsoncoors.wd5.myworkdayjobs.com
-  tenant: molsoncoors
-  board: MolsonCoors
+  platform: browser_career
   enabled: true
   max_detail_requests: 30
   focus: Global; brewing; fermentation; yeast; beverage science; food science
+  url: https://careers.molsoncoors.com/
+  follow_entry_links: true
+  render_wait_ms: 4500
+  note: Workday tenant unverified; using browser_career pending ATS check
 - name: Diageo
   target_profile: user1
   priority: Tier 1
-  platform: workday
-  host: diageo.wd3.myworkdayjobs.com
-  tenant: diageo
-  board: Diageo
+  platform: browser_career
   enabled: true
   max_detail_requests: 30
   focus: UK; brewing; distilling; fermentation; yeast; beverage science
+  url: https://www.diageo.com/en/careers/job-search/
+  follow_entry_links: true
+  render_wait_ms: 4500
+  note: Workday tenant unverified; using browser_career pending ATS check
 - name: Asahi Europe
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://www.asahieuropeandinternational.com/careers/
+  url: https://www.asahieuropeandinternational.com/en/careers/
   enabled: true
   follow_entry_links: true
-  render_wait_ms: 4000
+  render_wait_ms: 4500
   max_detail_requests: 20
   focus: Europe; brewing; fermentation; yeast; beverage science; food microbiology
+  note: Previous URL was incorrect; updated to correct domain
 - name: Fermentis
   target_profile: user1
   priority: Tier 1
