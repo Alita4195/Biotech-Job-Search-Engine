@@ -2206,12 +2206,13 @@ companies:
 - name: Melt&Marble
   target_profile: user1
   priority: Tier 1
-  platform: browser_career
-  url: https://www.meltandmarble.com/jobs
+  platform: recruitee
+  board: meltandmarble
   enabled: true
-  diagnostic: false
-  heading_jobs: true
+  zero_result_verified: true
   max_detail_requests: 20
+  focus: Sweden; precision fermentation; microbial engineering; animal-free fats; food science
+  note: Uses Recruitee ATS; currently no open positions (only unsolicited application).
   focus: Sweden; precision fermentation; metabolic engineering; microbial oils; sustainable
     food ingredients
   render_wait_ms: 3500
