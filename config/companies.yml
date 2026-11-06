@@ -1827,7 +1827,8 @@ companies:
   note: SETU uses CoreHR ATS, not setu.ie/careers
   enabled: true
   follow_entry_links: true
-  render_wait_ms: 4000
+  render_wait_ms: 6000
+  scroll_passes: 3
   max_detail_requests: 20
   focus: Ireland; food science; fermentation; microbiology; biotechnology; applied
     research
