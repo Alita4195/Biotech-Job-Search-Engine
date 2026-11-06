@@ -1816,9 +1816,28 @@ companies:
   platform: browser_career
   url: https://www.helsinki.fi/en/about-us/careers
   enabled: true
-  focus: food science, comparative genomics, microbiology, faculty of agriculture
-    and forestry
+  focus: food science, comparative genomics, microbiology, faculty of agriculture and forestry
   render_wait_ms: 4000
+- name: SETU (South East Technological University)
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.setu.ie/about/careers
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; food science; fermentation; microbiology; biotechnology; applied research
+- name: Teagasc
+  target_profile: user1
+  priority: Tier 1
+  platform: browser_career
+  url: https://www.teagasc.ie/about/jobs/
+  enabled: true
+  follow_entry_links: true
+  render_wait_ms: 4000
+  max_detail_requests: 20
+  focus: Ireland; food research; dairy; fermentation; gut microbiome; probiotics; agriculture; food science
   follow_entry_links: true
 - name: TFTAK (Center of Food and Fermentation Technologies)
   target_profile: user1
