@@ -1908,7 +1908,9 @@ companies:
   platform: browser_career
   url: https://www.sniprbiome.com/careers-overview
   enabled: true
+  zero_result_verified: true
   focus: CRISPR antimicrobials, microbiome engineering
+  note: No current openings; monitoring for future positions.
 - name: Microbiotica
   target_profile: user1
   priority: Tier 1
