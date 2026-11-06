@@ -2559,15 +2559,13 @@ companies:
 - name: Asahi Europe
   target_profile: user1
   priority: Tier 1
-  platform: browser_career
-  url: https://www.asahi-europe.com/careers/
-  enabled: false
-  follow_entry_links: true
-  render_wait_ms: 4500
+  platform: successfactors
+  url: https://careersasahiinternational.jobs.hr.cloud.sap/AEI/search/
+  enabled: true
   max_detail_requests: 20
   focus: Europe; brewing; fermentation; yeast; beverage science; food microbiology
-  note: 'Disabled: correct careers URL unknown, timing out. Re-enable once correct
-    URL is found.'
+  note: Asahi Europe uses SAP SuccessFactors at careersasahiinternational.jobs.hr.cloud.sap
+  search_url: https://careersasahiinternational.jobs.hr.cloud.sap/AEI/search/
 - name: Fermentis
   target_profile: user1
   priority: Tier 1
