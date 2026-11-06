@@ -2384,7 +2384,7 @@ companies:
   target_profile: user1
   priority: Tier 1
   platform: browser_career
-  url: https://www.chalmers.se/en/about-chalmers/work-with-us/jobs/
+  url: https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
   enabled: true
   follow_entry_links: true
   render_wait_ms: 4500
